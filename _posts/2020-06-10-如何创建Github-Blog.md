@@ -1,3 +1,13 @@
+
+---
+layout: post
+title: "如何创建Github blog"
+author: "Dersu"
+categories: journal
+tags: [documentation,sample]
+image: forest.jpg
+---
+
 我看到Jake VanderPlas写的Github文章《[Understanding Data Types in Python](https://jakevdp.github.io/PythonDataScienceHandbook/02.01-understanding-data-types.html)》，如此优美。
 
 我尝试github.io，得到https://pages.github.com。按照指示可以申请自己的github.io的博客。
