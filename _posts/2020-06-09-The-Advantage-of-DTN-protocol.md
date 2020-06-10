@@ -7,7 +7,7 @@ tags: [documentation,sample]
 
 ---
 
-[A NASA's video](https://www.youtube.com/watch?v=HV8CHoWP9-o) shows a picture of TCP, UDP and DTN. Is it real? It tells that TCP is designed to make sure the current file is delivered first, UDP transfers data as much as possible without acknowledgement, and DTN is surprisingly efficient for it guarantee to send the oldest file first, and only requires the next hop, hence make the most benefit out of connection.
+[A NASA video](https://www.youtube.com/watch?v=HV8CHoWP9-o) shows a picture of TCP, UDP and DTN. Is it real? It tells that TCP is designed to make sure the current file is delivered first, UDP transfers data as much as possible without acknowledgement, and DTN is surprisingly efficient for it guarantees to send the oldest file first, and only requires the next hop, hence makes the most benefit out of connection.
 
 Can one expect that more and more devices will use DTN instead of TCP or UDP?
 
