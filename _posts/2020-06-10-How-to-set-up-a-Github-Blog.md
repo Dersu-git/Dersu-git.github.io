@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "How to set up a Github blog!"
+title: "How to set up a Github blog?"
 author: "Dersu"
 categories: journal
 tags: [documentation,sample]
