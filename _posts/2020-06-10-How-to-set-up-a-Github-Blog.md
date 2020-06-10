@@ -12,18 +12,19 @@ The key task is to copy all the file in his repo to my repo in master branch. He
 1. New a repository with the name "username.github.io". In my case, dersu-git.github.io.
 2. In the setting of the repository, choose a theme. Then browse https://username.github.io, one might see the blog.
 3. Replace the whole repo. Talk later.
-4. Personalization. Reading each file, one might know which part need to be modifed.
+4. Personalization. Reading each file, one might know which part need to be modified.
 
 
-There are two ways to build the basic repo, by Git command or by Github webpage functions to upload files one by one. 
+Back to Step 3, There are two ways to build the basic repo, by Git command or by Github webpage functions to upload files one by one. 
 
 Let's introduce the git command solution:
 ```
 git pull orgin master
 ```
-There will be a folder, cd to that folder.
+There will be a folder, delete all the files, and switch (cd) to that folder.
 
-Download the theme [Lagrange](https://github.com/LeNPaul/Lagrange/). Copy all the files to the folder.
+Download the theme [Lagrange](https://github.com/LeNPaul/Lagrange/). Copy all the files to the folder, and synchronize to the Github repo. BTW, it is good to do "4. Personalization" before synchronization, if one is not that eager to see what will happen.
+
 
 ```
 git add .
