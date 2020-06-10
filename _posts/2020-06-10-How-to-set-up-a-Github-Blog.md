@@ -34,7 +34,7 @@ git push origin master
 
 One may see the blog is like the demo site.
 
-Then how to new a Github blog later? Write a markdown file, copy it to _posts folder and "synchronize".
+Later one may new a Github blog by write a markdown file, following the naming rule, for example 2020-06-10-how-to-set-up-a-github-blog.md, copy it to _posts folder and "synchronize".
 
 
 
