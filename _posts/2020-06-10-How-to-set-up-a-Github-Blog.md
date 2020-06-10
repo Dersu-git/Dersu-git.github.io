@@ -1,3 +1,13 @@
+---
+layout: post
+title: "How to set up a Github blog!"
+author: "Dersu"
+categories: journal
+tags: [documentation,sample]
+image: mountains.jpg
+---
+
+
 There is Github Pages, so one may set up an elegant Github blog.
 
 Github enables markdown files uploaded to be published as blogs. So if one builds a basic repo as a structure, he may "blog like a geek" later by uploading .md files.
