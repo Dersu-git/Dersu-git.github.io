@@ -1,29 +1,35 @@
-我看到Jake VanderPlas写的Github文章《[Understanding Data Types in Python](https://jakevdp.github.io/PythonDataScienceHandbook/02.01-understanding-data-types.html)》，如此优美，且有comment栏。
+There is Github Pages, so one may set up an elegant Github blog.
 
-我尝试github.io，得到https://pages.github.com。按照指示可以申请自己的github.io的博客。这个博客的特点是：书写markdown文档，上传，就可以发布为blog。那么，需要建设一个基础repo。
+Github enables markdown files uploaded to be published as blogs. So if one builds a basic repo, he may "blog like a geeker" later by uploading .md files.
 
-1）新建一个repository，名字叫username.github.io。我的是dersu-git.github.io。
+In fact, Mr. Paul Le said so:
+> The beauty of hosting your website on GitHub is that you don’t have to actually have Jekyll installed on your computer. Everything can be done through the GitHub code editor, with minimal knowledge of how to use Jekyll or the command line. All you have to do is add your posts to the _posts directory and edit the _config.yml file to change the site settings. With some rudimentary knowledge of HTML and CSS, you can even modify the site to your liking. This can all be done through the GitHub code editor, which acts like a content management system (CMS).
 
-2）点击repository setting，选择一个theme。这样在浏览器输入username.github.io，可以得到博客网页。
+I decided to use Mr. Paul Le's theme, it's tidy and gentle.
 
-3）替换整个repo。
-在Terminal中pull 整个repository。
+1. New a repository with the name "username.github.io". In my case, dersu-git.github.io.
+2. In the setting of the repository, choose a theme. Then browse https://username.github.io, one might see the blog.
+3. Replace the whole repo.
+
+There are two ways to build the basic repo, by Git command or by Github webpage functions to upload files one by one. 
+
+Let's introduce the git command solution:
 ```
-git pull origin master
+git pull orgin master
 ```
-可以在本地得到dersu-git.github.io文件夹，这是本地repo，清空文件。
+There will be a folder, cd to that folder.
+
+Download the theme [Lagrange](https://github.com/LeNPaul/Lagrange/). Copy all the files to the folder.
+
 ```
-cd dersu-git.github.io
+git add .
+git commit -m "Copy a demo repo."
+git push origin master
 ```
 
-我喜欢Paul Le先生的Lagrange模板，在[这个地址](https://github.com/LeNPaul/Lagrange/)download所有文件。
+One may see the blog is like the demo site.
 
-并将所有文件拷贝至本地repo。可以看到blog如同demo site。
+4. Personalization.
 
-4）个人化：
-- _post中的md文档删除，替换成自己的blog md文档。
-- 修改menu中的文档。
-- 修改_config.yml。
-- 修改_data中的setting.yml。需要申请disqus账号，获得short name。
-- 修改favicon.ico。需要申请favicon。
+Reading each file, one might know which part need to be modifed.
 
