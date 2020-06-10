@@ -15,7 +15,7 @@ Github enables markdown files uploaded to be published as blogs. So if one build
 In fact, Mr. Paul Le said so:
 > The beauty of hosting your website on GitHub is that you don’t have to actually have Jekyll installed on your computer. 
 
-I decided to use Mr. Paul Le's theme, it's tidy and gentle. Let me adjust it to be my basic repo.
+I decided to use Mr. Paul Le's theme, it's tidy and gentle. Let me adjust it to be my basic repo. 
 
 The key task is to copy all the files in his repo to my repo in master branch. Here are the steps:
 
@@ -45,5 +45,8 @@ git push origin master
 One may see the blog is like the demo site.
 
 Later one can new a Github blog this way: write a markdown file, save it following the naming rule, for example 2020-06-10-how-to-set-up-a-github-blog.md, copy it to _posts folder and "synchronize".
+
+
+Acknowledgement: @DWJWendy shared the experience in [a blog](https://www.jianshu.com/p/d7c6e59931f0) which inspired me a lot, and the blog also links to more themes: [Themes](https://hexo.io/themes/), [Jekyll Themes](http://jekyllthemes.org).
 
 
