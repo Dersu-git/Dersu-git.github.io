@@ -11,5 +11,4 @@ A NASA's video shows a picture of TCP, UDP and DTN. Is it real? It tells that TC
 
 Can one expect that more and more devices will use DTN instead of TCP or UDP?
 
-![a picture](http://note.youdao.com/yws/public/resource/fcfb1ffdf4cd866c9e2d9444fa6a0610/WEBRESOURCE5957eb6f5e4a085a234c2113fccf60d2?ynotemdtimestamp=1591765607335
-) 
+![image](http://note.youdao.com/yws/public/resource/fcfb1ffdf4cd866c9e2d9444fa6a0610/WEBRESOURCE5957eb6f5e4a085a234c2113fccf60d2?ynotemdtimestamp=1591765607335)
