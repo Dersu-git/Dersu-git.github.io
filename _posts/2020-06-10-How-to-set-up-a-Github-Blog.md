@@ -9,9 +9,11 @@ I decided to use Mr. Paul Le's theme, it's tidy and gentle.
 
 The key task is to copy all the file in his repo to my repo in master branch. Here are the steps:
 
-1.New a repository with the name "username.github.io". In my case, dersu-git.github.io.
-2.In the setting of the repository, choose a theme. Then browse https://username.github.io, one might see the blog.
-3.Replace the whole repo.
+1. New a repository with the name "username.github.io". In my case, dersu-git.github.io.
+2. In the setting of the repository, choose a theme. Then browse https://username.github.io, one might see the blog.
+3. Replace the whole repo. Talk later.
+4. Personalization. Reading each file, one might know which part need to be modifed.
+
 
 There are two ways to build the basic repo, by Git command or by Github webpage functions to upload files one by one. 
 
@@ -31,7 +33,5 @@ git push origin master
 
 One may see the blog is like the demo site.
 
-4.Personalization.
 
-Reading each file, one might know which part need to be modifed.
 
