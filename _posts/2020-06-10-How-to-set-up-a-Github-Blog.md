@@ -33,18 +33,18 @@ git pull origin master
 ``` 
 There will be a folder as a local copy of the Github repo, delete the few files inside, and switch (cd) to that folder.
 
-Download the theme [Lagrange](https://github.com/LeNPaul/Lagrange/). Copy all the files to the folder, and synchronize to the Github. BTW, it is good to do "4. Personalization" before synchronization, if one is not that eager to see what will happen.
-
+Download the theme [Lagrange](https://github.com/LeNPaul/Lagrange/). Copy all the files to the folder, and "synchronize" to the Github. 
 
 ```
 git add .
 git commit -m "Copy a basic repo"
 git push origin master
 ```
+BTW, it is also Ok to do "4. Personalization" before synchronization, if one is not that eager to see what will happen.
 
 One may see the blog is like the demo site.
 
-Later one can new a Github blog this way: write a markdown file, save it following the naming rule, for example 2020-06-10-how-to-set-up-a-github-blog.md, copy it to _posts folder and "synchronize".
+Later one can new a Github blog this way: write a markdown file, save it following the naming rule, for example 2020-06-10-how-to-set-up-a-github-blog.md, copy it to _posts folder and "synchronize" with a specific message in place of "Copy a basic repo".
 
 
 Acknowledgement: @DWJWendy shared the experience in [a blog](https://www.jianshu.com/p/d7c6e59931f0) which inspired me a lot, and the blog also links to more themes: [Themes](https://hexo.io/themes/), [Jekyll Themes](http://jekyllthemes.org).

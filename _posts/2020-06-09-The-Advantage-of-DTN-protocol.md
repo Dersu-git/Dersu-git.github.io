@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Isn't DTN superior?"
+title: "Is DTN superior?"
 author: "Dersu"
 categories: journal
 tags: [documentation,sample]
