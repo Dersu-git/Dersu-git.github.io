@@ -10,7 +10,7 @@ image: mountains.jpg
 
 There is Github Pages, so one may set up an elegant Github blog.
 
-Github enables markdown files uploaded to be published as blogs. So if one builds a basic repository (=repo） as a structure, he may "blog like a geek" later by uploading .md files.
+Github enables markdown files uploaded to be published as blogs. So if one builds a basic repository (=repo) as a structure, he may "blog like a geek" later by uploading .md files.
 
 In fact, Mr. Paul Le [said so](https://lenpaul.github.io/Lagrange/journal/getting-started.html):
 > The beauty of hosting your website on GitHub is that you don’t have to actually have Jekyll installed on your computer. 
