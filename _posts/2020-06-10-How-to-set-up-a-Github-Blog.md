@@ -19,7 +19,7 @@ I decided to use Mr. Paul Le's theme [Lagrange](https://github.com/LeNPaul/Lagra
 
 The key task is to copy all the files in his repo to my repo in **master** branch. 
 
-(So we can't do it by "Clone" or "Fork" because the data won't be copied in the master branch. We can take the concept of master branch this way: a Github repo is invisibly organized as a tree for the convenience of team work. Team members work in sub-branches independently and a manager may accept the changes into master branch[^branches][^mergingbranches][^collaborating].)
+(So we can't do it by "Clone" or "Fork" because the data won't be copied in the master branch. We can take the concept of master branch this way: a Github repo is invisibly organized as a tree for the convenience of team work. Team members work in sub-branches independently and a manager may accept the changes into master branch[1][2][3].)
 
 Here are the steps:
 
@@ -52,7 +52,7 @@ git push origin master
 ```
 One may see the blog is like the demo site.
 
-(Let's look at **the git command sequence**. Git is basically a version management protocol[^versioncontrol][^staging][^push]. There is a local invisible folder recording all the modifications and storing files of the newest version. The work flow of git is to modify visible files and 1)add some of the changed files to staging area (by command "git add"). Then 2)commit the changes to the final version by command "git commit". So far all the operations are local and personal. Github is a server hosting the final version and the history for one or for a team. Hence 3)finally push the changes to Github (by command "git push").
+(Let's look at **the git command sequence**. Git is basically a version management protocol[4][5][6]. There is a local invisible folder recording all the modifications and storing files of the newest version. The work flow of git is to modify visible files and 1)add some of the changed files to staging area (by command "git add"). Then 2)commit the changes to the final version by command "git commit". So far all the operations are local and personal. Github is a server hosting the final version and the history for one or for a team. Hence 3)finally push the changes to Github (by command "git push").
 
 <div style="text-align:left;"><img src="{{ site.github.url }}/assets/img/gitcommand.jpg" style="margin-bottom:0px; max-width:80%;" alt=""><p style="font-size:12px">Fig: Git work flow</p></div>
 
@@ -67,12 +67,13 @@ I add a picture to a markdown file like this:
 <div style="text-align:left;"><img src="{{ site.github.url }}/assets/img/gitcommand.jpg" style="margin-bottom:0px; max-width:80%;" alt=""><p style="font-size:12px">Fig: Git work flow</p></div>
 ```
 
+
 Acknowledgement: @DWJWendy shared the experience in [a blog](https://www.jianshu.com/p/d7c6e59931f0) which inspired me a lot, and the blog also links to more themes: [Themes](https://hexo.io/themes/), [Jekyll Themes](http://jekyllthemes.org).
 
-Ref:
-[^branches]: The Net Ninja, [Git & GitHub Tutorial for Beginners #8 - Branches](https://www.youtube.com/watch?v=QV0kVNvkMxc)
-[^mergingbranches]: The Net Ninja, [Git & GitHub Tutorial for Beginners #9 - Merging Branches (& conflicts)](https://www.youtube.com/watch?v=XX-Kct0PfFc)
-[^collaborating]: The Net Ninja, [Git & GitHub Tutorial for Beginners #11 - Collaborating on GitHub](https://www.youtube.com/watch?v=MnUd31TvBoU&list=PL4cUxeGkcC9goXbgTDQ0n_4TBzOO0ocPR&index=11)
-[^versioncontrol]: Brad Schiff(Youtube ID: LearnWebCode), [Git Tutorial Part 1: What is Version Control?](https://www.youtube.com/watch?v=9GKpbI1siow)
-[^staging]: Brad Schiff(Youtube ID: LearnWebCode), [Git Tutorial Part 2: Vocab (Repo, Staging, Commit, Push, Pull)](https://www.youtube.com/watch?v=n-p1RUmdl9M&list=RDCMUCHRp19HU7Y2LwfI0Ai6WAGQ&index=2)
-[^push]: Brad Schiff(Youtube ID: LearnWebCode), [Git Tutorial Part 4: GitHub (Pushing to a Server)](https://www.cnblogs.com/dersu/p/13045555.html)
+Ref:  
+[1] The Net Ninja, [Git & GitHub Tutorial for Beginners #8 - Branches](https://www.youtube.com/watch?v=QV0kVNvkMxc)  
+[2] The Net Ninja, [Git & GitHub Tutorial for Beginners #9 - Merging Branches (& conflicts)](https://www.youtube.com/watch?v=XX-Kct0PfFc)  
+[3] The Net Ninja, [Git & GitHub Tutorial for Beginners #11 - Collaborating on GitHub](https://www.youtube.com/watch?v=MnUd31TvBoU&list=PL4cUxeGkcC9goXbgTDQ0n_4TBzOO0ocPR&index=11)  
+[4] Brad Schiff(Youtube ID: LearnWebCode), [Git Tutorial Part 1: What is Version Control?](https://www.youtube.com/watch?v=9GKpbI1siow)  
+[5] Brad Schiff(Youtube ID: LearnWebCode), [Git Tutorial Part 2: Vocab (Repo, Staging, Commit, Push, Pull)](https://www.youtube.com/watch?v=n-p1RUmdl9M&list=RDCMUCHRp19HU7Y2LwfI0Ai6WAGQ&index=2)  
+[6] Brad Schiff(Youtube ID: LearnWebCode), [Git Tutorial Part 4: GitHub (Pushing to a Server)](https://www.cnblogs.com/dersu/p/13045555.html)
