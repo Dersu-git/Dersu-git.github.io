@@ -24,7 +24,7 @@ The key task is to copy all the files in his repo to my repo in **master** branc
 Here are the steps:
 
 1. New a repository with the name "username.github.io". In my case, dersu-git.github.io.
-2. In the setting of the repository (repo), choose a theme. Then browse https://username.github.io, one might see the blog.
+2. In the setting of the repository (repo), choose a theme. Then browse https://username.github.io, one might see the blog after a tiny while like 30 seconds.
 3. Replace the whole repo. Talk later.
 4. Personalization. Traverse each file, one might know which part need to be modified.
 
