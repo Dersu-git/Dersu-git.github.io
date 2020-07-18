@@ -40,9 +40,9 @@ git add .
 git commit -m "Copy a basic repo"
 git push origin master
 ```
-BTW, it is also Ok to do "4. Personalization" before synchronization, if one is not that eager to see what will happen.
-
 One may see the blog is like the demo site.
+
+BTW, it is also Ok to do "4. Personalization" before synchronization, if one is not that eager to see what will happen.
 
 Later one can new a Github blog this way: write a markdown file, save it following the naming rule, for example 2020-06-10-how-to-set-up-a-github-blog.md, copy it to _posts folder and "synchronize" with a specific message in place of "Copy a basic repo".
 
