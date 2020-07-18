@@ -52,11 +52,20 @@ git push origin master
 ```
 One may see the blog is like the demo site.
 
+(Why the git command sequence? Git is basically a version control protocol. There is a local invisible folder recording all the modifications and storing files of the newest version. The work flow of git is to modify visible files and 1)choose part of the changed files and add them to staging area (by command "git add"). Then 2)commit the changes to the final version by command "git commit". So far all the operations are local and personal. Github is a server hosting the final version and the history for one or for a team. Hence 3)finally puth the changes to Github (by command "git push").
+
+<div style="text-align:left;"><img src="{{ site.github.url }}/assets/img/gitcommand.jpg" style="margin-bottom:0px; max-width:80%;" alt=""><p style="font-size:12px">Fig: Git work flow</p></div>
+
 BTW, it is also Ok to do "4. Personalization" before synchronization, but I was eager to see what will happen.
 
-Later one can new a Github blog this way: write a markdown file locally, save it following the naming rule, for example: 2020-06-10-how-to-set-up-a-github-blog.md, copy it to _posts folder and "synchronize" with a specific message in place of "Copy a basic repo". 
+Later one can new a Github blog this way: write a markdown file locally, save it following the naming rule, for example: 2020-06-10-how-to-set-up-a-github-blog.md, copy it to _posts folder and copy the images to assets/img folder, "synchronize" with a specific message in place of "Copy a basic repo". 
 
 (The message means what kind of modification is done, it is a visual hint in Github version management, so let it be real for further benefit.)
+
+I add pictures to a markdown file like this:
+```
+<div style="text-align:left;"><img src="{{ site.github.url }}/assets/img/gitcommand.jpg" style="margin-bottom:0px; max-width:80%;" alt=""><p style="font-size:12px">Fig: Git work flow</p></div>
+```
 
  
 
