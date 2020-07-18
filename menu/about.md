@@ -3,7 +3,9 @@ layout: page
 title: Welcome to my Github blog
 ---
 
-My blogging name is Dersu. 
+Hi, there. My name is Zhi Lin. 
 
-I recommend [this theme](https://github.com/LeNPaul/Lagrange/), is this beautiful?
+I try to write my understanding about technologies in this blog. 
+
+
 

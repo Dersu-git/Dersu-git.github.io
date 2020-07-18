@@ -33,7 +33,7 @@ git pull origin master
 ``` 
 There will be a folder as a local copy of the Github repo, delete the few files inside, and switch (cd) to that folder.
 
-Download the theme [Lagrange](https://github.com/LeNPaul/Lagrange/). Copy all the files to the folder, and "synchronize" to the Github. 
+Download the theme [Lagrange](https://github.com/LeNPaul/Lagrange/). Copy all the files to the folder, and "synchronize" to Github. 
 
 ```
 git add .
