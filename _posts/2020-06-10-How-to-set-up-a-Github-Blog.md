@@ -41,9 +41,9 @@ I see a folder named "Dersu-git.github.io". This is the local copy of the online
 
 2)Back to normal MacOS, delete the few files inside.
 
-3)Download the theme [Lagrange](https://github.com/LeNPaul/Lagrange/). Copy all the files to the folder. Now I have plagiarized a basic repo.
+3)Download the theme [Lagrange](https://github.com/LeNPaul/Lagrange/). Copy all the files to the folder. Now I have plagiarized a basic repo locally.
 
-4)In the command window, switch (cd) to this folder, and "synchronize" all the data to Github by a git command sequence. 
+4)In the command window, switch (cd) to this folder, and "synchronize" all the data to the online Github repo by **a git command sequence**. 
 
 ```
 git add .
@@ -54,7 +54,11 @@ One may see the blog is like the demo site.
 
 BTW, it is also Ok to do "4. Personalization" before synchronization, but I was eager to see what will happen.
 
-Later one can new a Github blog this way: write a markdown file, save it following the naming rule, for example: 2020-06-10-how-to-set-up-a-github-blog.md, copy it to _posts folder and "synchronize" with a specific message in place of "Copy a basic repo".
+Later one can new a Github blog this way: write a markdown file locally, save it following the naming rule, for example: 2020-06-10-how-to-set-up-a-github-blog.md, copy it to _posts folder and "synchronize" with a specific message in place of "Copy a basic repo". 
+
+(The message means what kind of modification is done, it is a visual hint in Github version management, so let it be real for further benefit.)
+
+ 
 
 
 Acknowledgement: @DWJWendy shared the experience in [a blog](https://www.jianshu.com/p/d7c6e59931f0) which inspired me a lot, and the blog also links to more themes: [Themes](https://hexo.io/themes/), [Jekyll Themes](http://jekyllthemes.org).
