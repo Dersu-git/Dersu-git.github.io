@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Is DTN superior?"
-author: "Dersu"
+author: "Zhi"
 categories: journal
 tags: [documentation,sample]
 
