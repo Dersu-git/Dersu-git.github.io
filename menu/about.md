@@ -5,7 +5,7 @@ title: Welcome to my Github blog
 
 Hello. 
 
-This is Zhi Lin. I try to write my understanding about technologies in this blog. 
+This is Dersu, a blogging name. I try to write my understanding about technologies in this blog. 
 
 
 

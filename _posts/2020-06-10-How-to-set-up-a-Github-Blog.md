@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "How to set up a Github blog?"
-author: "Zhi"
+author: "Dersu"
 categories: journal
 tags: [documentation,sample]
 image: mountains.jpg
