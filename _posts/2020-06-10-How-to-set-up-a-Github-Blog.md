@@ -15,11 +15,11 @@ Github enables markdown files uploaded to be published as blogs. So if one build
 In fact, Mr. Paul Le [said so](https://lenpaul.github.io/Lagrange/journal/getting-started.html):
 > The beauty of hosting your website on GitHub is that you don’t have to actually have Jekyll installed on your computer. 
 
-I decided to use Mr. Paul Le's theme [Lagrange](https://github.com/LeNPaul/Lagrange/), it's tidy and gentle. Let it be a model blog repo and I tailor it to be my basic blog repo. 
+I decided to use Mr. Paul Le's theme [Lagrange](https://github.com/LeNPaul/Lagrange/), it's tidy and gentle. Let it be a model blog repo and I tailor it to be a basic blog repo. 
 
 The key task is to copy all the files in his repo to my repo in **master** branch. 
 
-(So we can't do it by "Clone" or "Fork" because the data won't be copied in the master branch. We can take the concept of master branch this way: a Github repo is invisibly organized as a tree for the convenience of team work. Team members work in sub-branches independently and a manager may accept the changes into master branch[1][2][3].)
+(So we can't do it by "Clone" or "Fork" because the data won't be copied in the master branch. We can take the concept of master branch this way: a Github repo is invisibly organized as a tree for the convenience of team work. Team members work in sub-branches independently and a manager may converge the changes into master branch[1][2][3].)
 
 Here are the steps:
 
