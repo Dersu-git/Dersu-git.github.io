@@ -67,11 +67,13 @@ One may see the blog is like the demo site.
 
 BTW, it is also Ok to do "4. Personalization" before synchronization, but I was eager to see what would happen.
 
+The work flow of setting up the Github blog is demostrated in Fig. Git work flow.
+
 Later one can new a Github blog this way: write a markdown file locally, save it following the naming rule, for example: 2020-06-10-how-to-set-up-a-github-blog.md, copy it to _posts folder and copy the images to assets/img folder, "synchronize" with a specific message in place of "Copy a basic repo". 
 
-(The message means what kind of modification is done, it is a visual hint in Github version management, so let it be real for further benefit.)
+(The message means what kind of modification is done, it is a visual hint in Github version management, so it's good to be real.)
 
-I add a picture to a markdown file like this:
+I add a picture to a markdown file using HTML code:
 ```
 <div style="text-align:left;"><img src="{{ site.github.url }}/assets/img/gitcommand.jpg" style="margin-bottom:0px; max-width:80%;" alt=""><p style="font-size:12px">Fig: Git work flow</p></div>
 ```
