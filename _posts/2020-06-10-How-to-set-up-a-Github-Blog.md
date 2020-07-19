@@ -71,7 +71,7 @@ The work flow of setting up the Github blog is demostrated in Fig. Git work flow
 
 Later one can new a Github blog this way: write a markdown file locally, save it following the naming rule, for example: 2020-06-10-how-to-set-up-a-github-blog.md, copy it to _posts folder and copy the images to assets/img folder, "synchronize" with a specific message in place of "Copy a basic repo". 
 
-(The message means what kind of modification is done, it is a visual hint in Github version management, so it's good to be real.)
+(The message means what kind of modification is done, it is a visual hint in Github version management.)
 
 I add a picture to a markdown file using HTML code:
 ```
