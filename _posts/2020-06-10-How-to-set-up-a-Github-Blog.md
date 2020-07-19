@@ -15,7 +15,7 @@ Github enables markdown files uploaded to be published as blogs. So if one build
 In fact, Mr. Paul Le [said so](https://lenpaul.github.io/Lagrange/journal/getting-started.html):
 > The beauty of hosting your website on GitHub is that you don’t have to actually have Jekyll installed on your computer. 
 
-I decided to use Mr. Paul Le's theme [Lagrange](https://github.com/LeNPaul/Lagrange/), it's tidy and gentle. Let me tailor it to be my basic repo. 
+I decided to use Mr. Paul Le's theme [Lagrange](https://github.com/LeNPaul/Lagrange/), it's tidy and gentle. Let it be a model blog repo and I tailor it to be my basic blog repo. 
 
 The key task is to copy all the files in his repo to my repo in **master** branch. 
 
@@ -26,28 +26,37 @@ Here are the steps:
 1. New a repository with the name "username.github.io". In my case, dersu-git.github.io.
 2. In the setting of the repository (repo), choose a theme. Then browse https://username.github.io, one might see the blog after a tiny while like 30 seconds.
 3. Replace the whole repo. Talk later.
-4. Personalization. Traverse each file, one might know which part need to be modified.
+4. Personalization. Traversing each file, one might know which part need to be modified. Like _config.yml, _data/setting.yml, _post, menu, favicon.ico. For setting.yml, a disqus account is needed for comments.
 
-
-Back to Step 3, there are two ways to build the basic repo, i)by Git command or ii)by Github webpage functions to upload files one by one -- theoretically, I didn't try it. 
+Back to Step 3, there are two ways to build the basic repo, i)by Git command or ii)by Github webpage functions to upload files one by one -- Theoretically. I haven't tried it. 
 
 Let me introduce the git command solution. My plan is to build the basic repo in a local folder, modify the files locally and synchronize all the data to the online Github repo. Here are the operations:
 
 1)In the command window, for me MacOS Terminal, input:
 ```
+git --version 
+git config --global user.name "myusername"
+git config --global user.email "myemailaddress"
+```
+These commands are optional if one uses git before.
+
+```
+git remote set-url origin https://github.com/Dersu-git/dersu-git.github.io
 git pull origin master
 ``` 
+(The url is one's own github blog repo link.)
+
 I see a folder named "Dersu-git.github.io". This is the local copy of the online Github repo, my focus.
 
 2)Back to Finder, delete the few files inside the folder.
 
-3)Download the theme [Lagrange](https://github.com/LeNPaul/Lagrange/). Copy all the files to the folder. Now I have plagiarized a basic repo locally.
+3)Download the theme [Lagrange](https://github.com/LeNPaul/Lagrange/). Copy all the files to the folder. Now I have plagiarized a basic blog repo locally.
 
 4)In the command window, switch (cd) to the folder, and "synchronize" all the data to the online Github repo by **a git command sequence**. 
 
 ```
 git add .
-git commit -m "Copy a basic repo"
+git commit -m "Copy a basic blog repo"
 git push origin master
 ```
 One may see the blog is like the demo site.
