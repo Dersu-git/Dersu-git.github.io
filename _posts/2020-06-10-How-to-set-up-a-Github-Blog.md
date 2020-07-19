@@ -79,6 +79,8 @@ I add a picture to a markdown file like this:
 
 Acknowledgement: @DWJWendy shared the experience in [a blog](https://www.jianshu.com/p/d7c6e59931f0) which inspired me a lot, and the blog also links to more themes: [Themes](https://hexo.io/themes/), [Jekyll Themes](http://jekyllthemes.org).
 
+[Here](https://www.cnblogs.com/dersu/p/13082583.html) is the Chinese version of this blog.
+
 Ref:  
 [1] The Net Ninja, [Git & GitHub Tutorial for Beginners #8 - Branches](https://www.youtube.com/watch?v=QV0kVNvkMxc)  
 [2] The Net Ninja, [Git & GitHub Tutorial for Beginners #9 - Merging Branches (& conflicts)](https://www.youtube.com/watch?v=XX-Kct0PfFc)  
