@@ -15,7 +15,7 @@ Github enables markdown files uploaded to be published as blogs. So if one build
 In fact, Mr. Paul Le [said so](https://lenpaul.github.io/Lagrange/journal/getting-started.html):
 > The beauty of hosting your website on GitHub is that you don’t have to actually have Jekyll installed on your computer. 
 
-I decided to use Mr. Paul Le's theme [Lagrange](https://github.com/LeNPaul/Lagrange/), it's tidy and gentle. Let it be a model blog repo and I tailor it to be a basic blog repo. 
+I decided to use Mr. Paul Le's theme [Lagrange](https://github.com/LeNPaul/Lagrange/). It's tidy and gentle. Let it be a model blog repo and I tailor it to be a basic blog repo. 
 
 The key task is to copy all the files in his repo to my repo in **master** branch. 
 
@@ -81,7 +81,7 @@ I add a picture to a markdown file using HTML code:
 
 Acknowledgement: @DWJWendy shared the experience in [a blog](https://www.jianshu.com/p/d7c6e59931f0) which inspired me a lot, and the blog also links to more themes: [Themes](https://hexo.io/themes/), [Jekyll Themes](http://jekyllthemes.org).
 
-[Here](https://www.cnblogs.com/dersu/p/13082583.html) is the Chinese version of this blog.
+
 
 Ref:  
 [1] The Net Ninja, [Git & GitHub Tutorial for Beginners #8 - Branches](https://www.youtube.com/watch?v=QV0kVNvkMxc)  
