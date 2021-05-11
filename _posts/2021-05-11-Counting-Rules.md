@@ -39,7 +39,7 @@ A **transparent** urn contains m distinguishable balls marked 1 to m, from which
 
 By "transparent", it means one can see all the balls in the urn during the experiment. Because our purpose is to calculate all the sample points, if it is a black box, we may draw repetitive outcomes that contribute one sample points. Since we are counting, it's confusing, isn't it?
 
-Here the sample space $\Omega$ is $\lbrace1,2,\cdots,m\rbrace$, each item is a sample point.
+Here the sample space $\Omega$ is $\lbrace 1,2,\cdots,m\rbrace$, each item is a sample point.
 
 ## Case I: Sampling with replacement and with ordering
 Question: we can interpret a sample with replacement and with ordering to be a n-tuple $(a_1, a_2, \cdots, a_n)$, any $a_i$ is the mark of the ball, namely any number from 1 to m. How many different n-tuples?
@@ -75,7 +75,7 @@ $$
 
 ## Case III: Sampling without replacement and without ordering
 
-Question：We are dealing with a set with the size n $\lbracea_1, a_2, \cdots, a_n\rbrace$, all $a_j $ being different. How many such sets?
+Question：We are dealing with a set with the size n $\lbrace a_1, a_2, \cdots, a_n\rbrace$, all $a_j $ being different. How many such sets?
 
 Ans: Likewise, step 1, there are $\binom{m}{1}$ possibilities for $a_1$; Step 2, $\binom{m-1}{1}$ for $a_2$;...; step n, $\binom{m-n+1}{1}$ for $a_n$.
 
@@ -83,7 +83,7 @@ But the items in a set are unordered.
 
 **Each unordered sample of size n produces n! ordered ones.**[1]
 
-For example, if $m=5, n=3$, the subsets $\lbrace2,4,5\rbrace$ can be drawn in 3!=6 ways as follows:
+For example, if $m=5, n=3$, the subsets $\lbrace 2,4,5\rbrace$ can be drawn in 3!=6 ways as follows:
 
 $(2,4,5),(2,5,4),(4,2,5),(4,5,2),(5,2,4),(5,4,2).$  
 
@@ -99,7 +99,7 @@ This is the **combination**, counting how many ways to choose unordered n balls 
 
 Suppose there are $m_1$ balls of color no. 1, $m_2$ balls of color no. 2, ..., $m_r$ balls of color no. r. Their colors are disguishable but balls of the same color are not. $m_1+m_2+\cdots+m_r=m$, how many distinguishable arrangements of these m balls are there?
 
-Question: We are dealing with r-tuples $(\lbracea_{1,1},\cdots, a_{1,m_1}\rbrace, \lbracea_{2,1},\cdots, a_{2,m_2}\rbrace,\cdots, \lbracea_{r,1},\cdots, a_{r,m_r}\rbrace)$
+Question: We are dealing with r-tuples $(\lbrace a_{1,1},\cdots, a_{1,m_1}\rbrace, \lbrace a_{2,1},\cdots, a_{2,m_2}\rbrace,\cdots, \lbrace a_{r,1},\cdots, a_{r,m_r}\rbrace)$
 
 Ans: Step 1, there are $\binom{m}{m_1}$ for the first group with $m_1$ members; step 2,$\binom{m-m_1}{m_2}$; step 3,$\binom{m-m_1-m_2}{m_3}$; ...; step r, $\binom{m_r}{m_r}$. Hence,
 
@@ -113,13 +113,13 @@ For example, if $m_1=m_2=2,m=4$, and the colors are black and white, there are 6
 
 ••oo $\space$ •o•o  $\space$   •oo•  $\space$   o•o•  $\space$  o••o $\space$ oo••
 
-Namely, $(\lbrace1,2\rbrace,\lbrace3,4\rbrace),(\lbrace1,3\rbrace,\lbrace2,4\rbrace),(\lbrace1,4\rbrace,\lbrace2,3\rbrace)，(\lbrace2,4\rbrace,\lbrace1,3\rbrace),(\lbrace2,3\rbrace,\lbrace1,4\rbrace), (\lbrace3,4\rbrace，\lbrace1,2\rbrace)$.
+Namely, $(\lbrace 1,2\rbrace,\lbrace 3,4\rbrace),(\lbrace 1,3\rbrace,\lbrace 2,4\rbrace),(\lbrace 1,4\rbrace,\lbrace 2,3\rbrace)，(\lbrace 2,4\rbrace,\lbrace 1,3\rbrace),(\lbrace 2,3\rbrace,\lbrace 1,4\rbrace), (\lbrace 3,4\rbrace，\lbrace 1,2\rbrace)$.
 
 ### Case IIIb：Partition into numbered groups, groups are unordered
 
 Let a population of m objects be subdivided into r groups: $m_1$ into group no.1, $m_2$into group no.1,...,$m_r$  into group no.r, where $m_1+m_2+\cdots+m_r=m$ and all $m_j\geq1$. We are not arranging the numbered groups in order.
 
-Question：we will get a set $\lbrace\lbracea_{1,1},\cdots, a_{1,m_1}\rbrace, \lbracea_{2,1},\cdots, a_{2,m_2}\rbrace,\cdots, \lbracea_{r,1},\cdots, a_{r,m_r}\rbrace\rbrace$. 
+Question：we will get a set $\lbrace\lbrace a_{1,1},\cdots, a_{1,m_1}\rbrace, \lbrace a_{2,1},\cdots, a_{2,m_2}\rbrace,\cdots, \lbrace a_{r,1},\cdots, a_{r,m_r}\rbrace\rbrace$. 
 
 Ans: Like Case IIIa, step 1, there are $\binom{m}{m_1}$ for the first group with $m_1$ members; step 2,$\binom{m-m_1}{m_2}$; step 3,$\binom{m-m_1-m_2}{m_3}$; ...; step r, $\binom{m_r}{m_r}$. The only difference is the groups are unordered. 
 
@@ -133,7 +133,7 @@ $$
 
 E.g. In how many ways can four people split into two pairs?
 
-$\lbrace\lbrace1,2\rbrace,\lbrace3,4\rbrace),(\lbrace1,3\rbrace,\lbrace2,4\rbrace),(\lbrace1,4\rbrace,\lbrace2,3\rbrace\rbrace$.
+$\lbrace\lbrace 1,2\rbrace,\lbrace 3,4\rbrace),(\lbrace 1,3\rbrace,\lbrace 2,4\rbrace),(\lbrace 1,4\rbrace,\lbrace 2,3\rbrace\rbrace$.
 
 This is the correct interpretation if the two pairs are going to play chess or pingpong games and two equally good tables are available to both pairs. 
 
@@ -141,7 +141,7 @@ But now suppose the two pairs are going to play double tennis together and the "
 
 ## Case IV: Sampling with replacement and without ordering
 
-Question: The sample can be denoted as $\lbracea_1, a_2, \cdots, a_n\rbrace$, but different $a_j$ may be the same number, then the size of the set is changing from 1 to n.
+Question: The sample can be denoted as $\lbrace a_1, a_2, \cdots, a_n\rbrace$, but different $a_j$ may be the same number, then the size of the set is changing from 1 to n.
 
 For example, 6 indistinguishable dice are rolled. How many different arrangements we will get?
 
@@ -149,7 +149,7 @@ This is confusing.
 
 Let's look at a simpler example: Toss 2 indistinguishable coins, how many different arrangements？
 
-Brute force will do. If the result is $(T,T)$, it's $\lbraceT, T\rbrace=\lbraceT\rbrace$; $(H,H)$ leads to $\lbraceH, H\rbrace$; $(H,T)$ or $(T,H)$ is recorded as $\lbraceH, T\rbrace$. So, $a=3$.
+Brute force will do. If the result is $(T,T)$, it's $\lbrace T, T\rbrace=\lbrace T\rbrace$; $(H,H)$ leads to $\lbrace H, H\rbrace$; $(H,T)$ or $(T,H)$ is recorded as $\lbrace H, T\rbrace$. So, $a=3$.
 
 > This probability should be have something to do with the experimental frequency of the occurrence of the event.[2]
 
@@ -290,11 +290,11 @@ Same $|\Omega|$. Still let's assume the groups are ordered.
 Students are labelled as: $(s_1,s_2,\cdots,s_{12},w_1,w_2,w_3)$
 
 3 classes are labelled as 3 types:
- $(\lbrace w_1,w_2,w_3,s_{i1},s_{i2}\rbrace,\lbraces_{i3},s_{i4},\cdots,s_{i7}\rbrace,\lbraces_{i8},\cdots,s_{i12}\rbrace)$,
+ $(\lbrace w_1,w_2,w_3,s_{i1},s_{i2}\rbrace,\lbrace s_{i3},s_{i4},\cdots,s_{i7}\rbrace,\lbrace s_{i8},\cdots,s_{i12}\rbrace)$,
 
-Or $(\lbraces_{i_1},s_{i_2},\cdots,s_{i_5}\rbrace,\lbraces_{i_6},s_{i_7},w_1,w_2,w_3\rbrace,\lbraces_{i_8},\cdots,s_{i_{12}}\rbrace)$,
+Or $(\lbrace s_{i_1},s_{i_2},\cdots,s_{i_5}\rbrace,\lbrace s_{i_6},s_{i_7},w_1,w_2,w_3\rbrace,\lbrace s_{i_8},\cdots,s_{i_{12}}\rbrace)$,
 
-Or $(\lbraces_{i_1},s_{i_2},\cdots,s_{i_5}\rbrace,\lbraces_{i_6},s_{i_7},\cdots,s_{i_{10}}\rbrace,\lbraces_{i_{11}},s_{i_{12}},w_1,w_2,w_3\rbrace)$.
+Or $(\lbrace s_{i_1},s_{i_2},\cdots,s_{i_5}\rbrace,\lbrace s_{i_6},s_{i_7},\cdots,s_{i_{10}}\rbrace,\lbrace s_{i_{11}},s_{i_{12}},w_1,w_2,w_3\rbrace)$.
 
 $i_1,\cdots,i_{12}$ is a rearrangement of $1,2,\cdots,12$.
 
