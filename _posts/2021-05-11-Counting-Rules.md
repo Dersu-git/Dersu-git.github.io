@@ -93,7 +93,7 @@ $$
 a=\frac{m\times (m-1) \times \cdots \times (m-n+1)}{n!}=\frac{m!}{n!(m-n)!}=\binom{m}{n}.
 $$
 
-This is the **combination**, counting how many ways to choose unordered n balls from m different balls。
+This is the **combination**, counting how many ways to choose unordered n balls from m different balls.
 
 ### Case IIIa: Partition into numbered groups, groups are ordered
 
@@ -113,7 +113,7 @@ For example, if $m_1=m_2=2,m=4$, and the colors are black and white, there are 6
 
 ••oo $\space$ •o•o  $\space$   •oo•  $\space$   o•o•  $\space$  o••o $\space$ oo••
 
-Namely, $(\lbrace 1,2\rbrace,\lbrace 3,4\rbrace),(\lbrace 1,3\rbrace,\lbrace 2,4\rbrace),(\lbrace 1,4\rbrace,\lbrace 2,3\rbrace)，(\lbrace 2,4\rbrace,\lbrace 1,3\rbrace),(\lbrace 2,3\rbrace,\lbrace 1,4\rbrace), (\lbrace 3,4\rbrace，\lbrace 1,2\rbrace)$.
+Namely, $(\lbrace 1,2\rbrace,\lbrace 3,4\rbrace),(\lbrace 1,3\rbrace,\lbrace 2,4\rbrace),(\lbrace 1,4\rbrace,\lbrace 2,3\rbrace)$, $(\lbrace 2,4\rbrace,\lbrace 1,3\rbrace),(\lbrace 2,3\rbrace,\lbrace 1,4\rbrace), (\lbrace 3,4\rbrace, \lbrace 1,2\rbrace)$.
 
 ### Case IIIb：Partition into numbered groups, groups are unordered
 
@@ -194,7 +194,7 @@ $$
 a= \binom{m-1+n}{n}.
 $$
 
-Observing all above, the counting rules are the following:
+Observing all above, **the counting rules** are:
 
 1)Divide the sampling task into independent steps: step 1, step 2,..., step r.
 
@@ -280,12 +280,11 @@ $$
 P(A)=\frac{|A|}{|\Omega|}=\frac{\frac{12!}{4!4!4!}3!}{\frac{15!}{5!5!5!} }
 $$
 
-If the groups are unordered.
-Then both $|A|$ and $|\Omega|$ need to be divided by $3!$, the $P(A)$ stays the same.
+If the groups are unordered, both $|A|$ and $|\Omega|$ need to be divided by $3!$, $P(A)$ stays the same.
 
 Now the second question: One class gets 3 whiz-kids?
 
-Same $|\Omega|$. Still let's assume the groups are ordered.
+Same $\mid \Omega \mid$. Still let's assume the groups are ordered.
 
 Students are labelled as: $(s_1,s_2,\cdots,s_{12},w_1,w_2,w_3)$
 
@@ -320,13 +319,13 @@ $$
 P(A)=\frac{|A|}{|\Omega|}=\frac{3\times \frac{12!}{2!5!5!}}{\frac{15!}{5!5!5!} }
 $$
 
-Like above, if the groups are unordered, $P(A)$ is the sames.
+Like above, if the groups are unordered, $P(A)$ is the same.
 
 ---
 
 **Problem 4**: Six dice are rolled. What is the probability of getting three pairs?
 
-Ans:$\Omega$={Six dice are rolled}, $A$={three pairs of 6 dices}. 
+Ans: $\Omega$ = {Six dice are rolled}, $A$ = {three pairs of 6 dices}. 
 
 $$
 |\Omega|=6^6
@@ -343,14 +342,14 @@ $a_3=\binom{2}{2}\binom{4}{1}$.
 Obviously, the pairs are not ordered. Therefore,
 
 $$
-|A|=\frac{a_1\times a_2\times a_3}{3!}=\frac{\binom{6}{2}\binom{6}{1} \times \binom{4}{2}\binom{5}{1}\times  \binom{2}{2}\binom{4}{1}}{3!}=\frac{6!}{2!2!2!}\frac{6\times 5\times 4}{3!}
+|A|=\frac{a_1\times a_2\times a_3}{3!}=\frac{\binom{6}{2}\binom{6}{1} \times \binom{4}{2}\binom{5}{1}\times  \binom{2}{2}\binom{4}{1}}{3!}=\frac{6!}{2!2!2!}\frac{6\times 5\times 4}{3!}.
 $$
 
 However, by definition, some sample points in the sample space fall in the event A subset, so we can calculate the probability by counting the number of sample points in the subset A and in the sample space.
 
-We have to think through when we shrink the size of A by categorizing some sample points to be 1, how many sample points originally?
+We have to think it through: when we shrink the size of A by categorizing some sample points to be 1, how many sample points originally?
 
-Here, let A' be 3 ordered pairs. Then multiple sample points are not categorized into 1.
+Here, let $A'$ be 3 ordered pairs. Then multiple sample points are not categorized into 1.
 
 $$
 |A'|=\binom{6}{2}\binom{6}{1} \times \binom{4}{2}\binom{5}{1}\times  \binom{2}{2}\binom{4}{1}=\frac{6!}{2!2!2!}6\times 5\times 4
