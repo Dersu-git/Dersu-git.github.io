@@ -157,7 +157,7 @@ If 2 coins are indistinguishable, are $(H,T)$ and $(T,H)$ one sample point? No. 
 
 Let's solve the question: 6 indistinguishable dice are rolled. How many different arrangements we will get?
 
-Experimentally let's label each dice as they are independent by nature. Say we use 6 dices with red, orange, yellow, green, blue, purple colors. 
+Experimentally let's label each dice as they are independent by nature. Say we use 6 dices of red, orange, yellow, green, blue, purple 6 colors respectively. 
 
 We record the result in this color order as a 6-tuple $(a_1, a_2, \cdots, a_6)$ and observe whether there is a patern.
 
@@ -212,12 +212,12 @@ $$
 |\Omega|=\binom{550}{25} 
 $$
 
-Step 1: choose 23 good apples from 539 ones.
+Step 1: choose 23 good apples from 539 ones. $a_1=\binom{539}{23}$
 
-Step 2: choose 2 rotton apples from 11 ones.
+Step 2: choose 2 rotton apples from 11 ones.$a_2=\binom{11}{2}$
 
 $$
-|A|=\binom{539}{23}\times\binom{11}{2}
+|A|=a_1\times a_2=\binom{539}{23}\times\binom{11}{2}
 $$
 
 Hence,
@@ -264,14 +264,14 @@ $$
 |\Omega|=\binom{15}{5} \times \binom{10}{5} \times \binom{5}{5} =\frac{15!}{5!5!5!}
 $$
 
-Step 1: choose 4 student from 12, and choose 1 whiz-kid from 3. $\binom{12}{4}\binom{3}{1}$
+Step 1: choose 4 student from 12, and choose 1 whiz-kid from 3. $a_1=\binom{12}{4}\binom{3}{1}$
 
-Step 2: choose 4 student from the rest 8, and choose 1 whiz-kid from 2. $\binom{8}{4} \binom{2}{1}$
+Step 2: choose 4 student from the rest 8, and choose 1 whiz-kid from 2. $a_2=\binom{8}{4} \binom{2}{1}$
 
-Step 3: choose 4 student from the rest 4, and choose 1 whiz-kid from 1. $\binom{4}{4} \binom{1}{1}$
+Step 3: choose 4 student from the rest 4, and choose 1 whiz-kid from 1. $a_3=\binom{4}{4} \binom{1}{1}$
 
 $$
-|A|=\binom{12}{4}\binom{3}{1} \times \binom{8}{4} \binom{2}{1} \times \binom{4}{4} \binom{1}{1}=\frac{12!}{4!4!4!}3!
+|A|=a_1\times a_2\times a_3=\binom{12}{4}\binom{3}{1} \times \binom{8}{4} \binom{2}{1} \times \binom{4}{4} \binom{1}{1}=\frac{12!}{4!4!4!}3!
 $$
 
 Hence,
@@ -343,7 +343,7 @@ $a_3=\binom{2}{2}\binom{4}{1}$.
 Obviously, the pairs are not ordered. Therefore,
 
 $$
-|A|=\frac{\binom{6}{2}\binom{6}{1} \times \binom{4}{2}\binom{5}{1}\times  \binom{2}{2}\binom{4}{1}}{3!}=\frac{6!}{2!2!2!}\frac{6\times 5\times 4}{3!}
+|A|=\frac{a_1\times a_2\times a_3}{3!}=\frac{\binom{6}{2}\binom{6}{1} \times \binom{4}{2}\binom{5}{1}\times  \binom{2}{2}\binom{4}{1}}{3!}=\frac{6!}{2!2!2!}\frac{6\times 5\times 4}{3!}
 $$
 
 However, by definition, some sample points in the sample space fall in the event A subset, so we can calculate the probability by counting the number of sample points in the subset A and in the sample space.
