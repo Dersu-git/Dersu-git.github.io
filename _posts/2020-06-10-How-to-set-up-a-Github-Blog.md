@@ -28,9 +28,9 @@ Here are the steps:
 3. Replace the whole repo. Talk later.
 4. Personalization. Traversing each file, one might know which part need to be modified. Like _config.yml, _data/setting.yml, _post, menu, favicon.ico. For setting.yml, a disqus account is needed for comments.
 
-Back to Step 3, there are two ways to build the basic repo, i)by Git command or ii)by Github webpage functions to upload files one by one -- Theoretically. I haven't tried it. 
+Back to Step 3, Build the basic repo by Git command. 
 
-Let me introduce the git command solution. My plan is to build the basic repo in a local folder, modify the files locally and synchronize all the data to the online Github repo. Here are the operations:
+My plan is to build the basic repo in a local folder, modify the files locally and synchronize all the data to the online Github repo. Here are the operations:
 
 1)In the command window, for me MacOS Terminal, input:
 ```
