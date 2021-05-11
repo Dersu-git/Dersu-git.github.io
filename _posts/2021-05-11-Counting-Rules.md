@@ -101,14 +101,13 @@ Ans: Step 1, there are $\binom{m}{m_1}$ for the first group with $m_1$ members; 
 
 $$
 a=\binom{m}{m_1}\binom{m-m_1}{m_2}\cdots \binom{m-m_1-\cdots-m_{r-1}}{m_r}
-
 =\frac{m!}{m_1!m_2!\cdots m_r!}.
 $$
 For example, if $m_1=m_2=2,m=4$, and the colors are black and white, there are 6 distinguishable arrangements: 
 
 ••oo $\space$ •o•o  $\space$   •oo•  $\space$   o•o•  $\space$  o••o $\space$ oo••
 
-Namely, ({1,2},{3,4}),$\space$ ({1,3},{2,4}),$\space$({1,4},{2,3})，$\space$({2,4},{1,3})$\space$({2,3},{1,4}), $\space$ ({3,4}，{1,2})。
+Namely, $(\{1,2\},\{3,4\}),(\{1,3\},\{2,4\}),(\{1,4\},\{2,3\})，(\{2,4\},\{1,3\}),(\{2,3\},\{1,4\}), (\{3,4\}，\{1,2\})$.
 
 ### Case IIIb：Partition into numbered groups, groups are unordered
 
@@ -142,7 +141,7 @@ This is confusing.
 
 Let's look at a simpler example: Toss 2 indistinguishable coins, how many different arrangements？
 
-Brute force will do. If the result is $(T,T)$, it's $\{T, T\}=\{T\}$; $(H,H)$ leads to $\{H\}$; $(H,T)$ or $(T,H)$ is recorded as $\{H, T\}$. So, $a=3$.
+Brute force will do. If the result is $(T,T)$, it's $\{T, T\}=\{T\}$; $(H,H)$ leads to $\{H, H\}$; $(H,T)$ or $(T,H)$ is recorded as $\{H, T\}$. So, $a=3$.
 
 > This probability should be have something to do with the experimental frequency of the occurrence of the event.[2]
 
@@ -321,6 +320,7 @@ Hence,
 $$
 |A|=\frac{\binom{6}{2}\binom{6}{1} \times \binom{4}{2}\binom{5}{1}\times  \binom{2}{2}\binom{4}{1}}{3!}=\frac{6!}{2!2!2!}\frac{6\times 5\times 4}{3!}
 $$
+
 However, by definition, some sample points in the sample space fall in the event A subset, so we can calculate the probability by counting the number of sample points in the subset A and in the sample space.
 
 We have to think through when we shrink the size of A by categorizing some sample points to be 1, how many sample points originally?
@@ -330,12 +330,11 @@ Here, let A' be 3 ordered pairs. Then multiple sample points are not categorized
 $$
 |A'|=\binom{6}{2}\binom{6}{1} \times \binom{4}{2}\binom{5}{1}\times  \binom{2}{2}\binom{4}{1}=\frac{6!}{2!2!2!}6\times 5\times 4
 $$
-
-
 Hence,
-$$
-P(A')=\frac{|A'|}{|\Omega|}=\frac{\frac{6!}{2!2!2!}6\times 5\times 4}{6^6}
-$$
+$$P(A')=\frac{|A'|}{|\Omega|}=\frac{\frac{6!}{2!2!2!}6\times 5\times 4}{6^6}$$
+
+
+
 ---
 Problem 5. (Birthdays). What is the probability that among n people there are at least two who have the same birthday?
 
