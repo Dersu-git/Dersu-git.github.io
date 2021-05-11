@@ -125,7 +125,7 @@ $$
 a=\frac{\binom{m}{m_1}\binom{m-m_1}{m_2}\cdots \binom{m_r}{m_r}}{r!}=\frac{m!}{m_1!m_2!\cdots m_r!r!}.
 $$
 E.g. In how many ways can four people split into two pairs?
-{{1,2},{3,4}},$\space$ {{1,3},{2,4}},$\space${{1,4},{2,3}}
+$\{\{1,2\},\{3,4\}),(\{1,3\},\{2,4\}),(\{1,4\},\{2,3\}\}$.
 
 This is the correct interpretation if the two pairs are going to play chess or pingpong games and two equally good tables are available to both pairs. 
 
