@@ -50,9 +50,9 @@ $$
 a=m^n.
 $$
 
-BTW, to toss a fair coin can be modelled as this case: a urn with 2 distinguishable balls, to draw 1 ball. 
+BTW, to toss a fair coin can be modelled as this case: an urn with 2 distinguishable balls, to draw 1 ball. 
 
-To throw a dice 3 times also can be modelled as this case: a urn with 6 distinguishable balls, to draw 3 balls in order. 
+To throw a dice 3 times also can be modelled as this case: an urn with 6 distinguishable balls, to draw 3 balls in order. 
 
 To throw 3 distinguishable dice once is also this case.
 
