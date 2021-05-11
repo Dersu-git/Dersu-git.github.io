@@ -4,7 +4,7 @@ title: "Counting Rules"
 author: "Dersu"
 categories: journal
 tags: [documentation,sample]
-image: monopoly.jpeg
+image: monopoly.jpg
 ---
 
 This is a note (copy) for Chapter 3 Counting in the book Elementary Probability Theory (Kai Lai Chung, Farid AitSahlia). 
@@ -18,6 +18,7 @@ Classically, the probability of an event $A$ is the ratio of the number of sampl
 $$
 P(A)=\frac{|A|}{|\Omega|}=1-\frac{|A^c|}{|\Omega|}
 $$
+
 $A^c$ is the complement of $A$.
 
 So to calculte the probability of an event A amounts to counting the sample points both in the subset A and in the sample space, when each sample point happens equally likely.
@@ -27,6 +28,7 @@ If an experiment is done step by step, every step has multiple possible outcomes
 $$
 a = m_1 \times m_2 \times \cdots \times m_r.
 $$
+
 $a$ hints *arrangements*.
 
 For example, there are 3 choices for Appetizer and 4 for Main course and 5 for desserts, we get the number of different dinners $a = 3\times 4 \times 5=60$.
@@ -37,7 +39,7 @@ A **transparent** urn contains m distinguishable balls marked 1 to m, from which
 
 By "transparent", it means one can see all the balls in the urn during the experiment. Because our purpose is to calculate all the sample points, if it is a black box, we may draw repetitive outcomes that contribute one sample points. Since we are counting, it's confusing, isn't it?
 
-Here the sample space $\Omega$ is $\{1,2,\cdots,m\}$, each item is a sample point.
+Here the sample space $\Omega$ is ${1,2,\cdots,m}$, each item is a sample point.
 
 ## Case I: Sampling with replacement and with ordering
 Question: we can interpret a sample with replacement and with ordering to be a n-tuple $(a_1, a_2, \cdots, a_n)$, any $a_i$ is the mark of the ball, namely any number from 1 to m. How many different n-tuples?
