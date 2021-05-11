@@ -4,7 +4,7 @@ title: "Counting Rules"
 author: "Dersu"
 categories: journal
 tags: [documentation,sample]
-image: monoply.jpeg
+image: monopoly.jpeg
 ---
 
 This is a note (copy) for Chapter 3 Counting in the book Elementary Probability Theory (Kai Lai Chung, Farid AitSahlia). 
