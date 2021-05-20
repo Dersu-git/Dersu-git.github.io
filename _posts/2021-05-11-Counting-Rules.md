@@ -280,7 +280,7 @@ $$
 P(A)=\frac{|A|}{|\Omega|}=\frac{\frac{12!}{4!4!4!}3!}{\frac{15!}{5!5!5!} }
 $$
 
-If the groups are unordered, both $|A|$ and $|\Omega|$ need to be divided by $3!$, $P(A)$ stays the same.
+If the groups are unordered, both $\mid A \mid$ and $\mid \Omega \mid$ need to be divided by $3!$, $P(A)$ stays the same.
 
 Now the second question: One class gets 3 whiz-kids?
 
