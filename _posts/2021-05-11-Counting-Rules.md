@@ -42,7 +42,7 @@ By "transparent", it means one can see all the balls in the urn during the exper
 Here the sample space $\Omega$ is $\lbrace 1,2,\cdots,m\rbrace$, each item is a sample point.
 
 ## Case I: Sampling with replacement and with ordering
-Question: we can interpret a sample with replacement and with ordering to be a n-tuple $(a_1, a_2, \cdots, a_n)$, any $a_i$ is the mark of the ball, namely any number from 1 to m. How many different n-tuples?
+Question: we can interpret a sample with replacement and with ordering to be a n-tuple $(b_1, b_2, \cdots, b_n)$, any $b_i$ is the mark of the ball, namely any number from 1 to $m$. How many different $n$-tuples?
 
 Ans: Fundamental Rule works here.
 
@@ -59,15 +59,15 @@ To throw 3 distinguishable dice once is also this case.
 
 ## Case II: Sampling without replacement and with ordering
 
-Question: Again, a sample can be denoted by a n-tuple $（a_1, a_2, \cdots, a_n）$ with a restriction that all $a_j$ be different. How many such n-tuples?
+Question: Again, a sample can be denoted by a $n$-tuple $（b_1, b_2, \cdots, b_n）$ with a restriction that all $b_j$ be different. How many such $n$-tuples?
 
-Ans: step 1, there are $\binom{m}{1}$ possibilities for $a_1$; step 2, $\binom{m-1}{1}$ for $a_2$;...; step n, $\binom{m-n+1}{1}$ for $a_n$. Hence,
+Ans: step 1, there are $\binom{m}{1}$ possibilities for $b_1$; step 2, $\binom{m-1}{1}$ for $b_2$;...; step n, $\binom{m-n+1}{1}$ for $b_n$. Hence,
 
 $$
 a=m\times (m-1) \times \cdots \times (m-n+1).
 $$
 
-Particularly, when n=m, the result is the **permutation** of m distinguishable balls.
+Particularly, when $n=m$, the result is the **permutation** of $m$ distinguishable balls.
 
 $$
 a=m\times (m-1) \times \cdots \times 1=m!.
@@ -75,15 +75,15 @@ $$
 
 ## Case III: Sampling without replacement and without ordering
 
-Question：We are dealing with a set with the size n $\lbrace a_1, a_2, \cdots, a_n\rbrace$, all $a_j $ being different. How many such sets?
+Question：We are dealing with a set with the size $n$ $\lbrace b_1, b_2, \cdots, b_n\rbrace$, all $b_j $ being different. How many such sets?
 
-Ans: Likewise, step 1, there are $\binom{m}{1}$ possibilities for $a_1$; Step 2, $\binom{m-1}{1}$ for $a_2$;...; step n, $\binom{m-n+1}{1}$ for $a_n$.
+Ans: Likewise, step 1, there are $\binom{m}{1}$ possibilities for $b_1$; Step 2, $\binom{m-1}{1}$ for $b_2$;...; step n, $\binom{m-n+1}{1}$ for $b_n$.
 
 But the items in a set are unordered. 
 
-**Each unordered sample of size n produces n! ordered ones.**[1]
+**Each unordered sample of size n produces $n!$ ordered ones.**[1]
 
-For example, if $m=5, n=3$, the subsets $\lbrace 2,4,5\rbrace$ can be drawn in 3!=6 ways as follows:
+For example, if $m=5, n=3$, the subsets $\lbrace 2,4,5\rbrace$ can be drawn in $3!=6$ ways as follows:
 
 $(2,4,5),(2,5,4),(4,2,5),(4,5,2),(5,2,4),(5,4,2).$  
 
@@ -93,13 +93,13 @@ $$
 a=\frac{m\times (m-1) \times \cdots \times (m-n+1)}{n!}=\frac{m!}{n!(m-n)!}=\binom{m}{n}.
 $$
 
-This is the **combination**, counting how many ways to choose unordered n balls from m different balls.
+This is the **combination**, counting how many ways to choose unordered $n$ balls from $m$ different balls.
 
 ### Case IIIa: Partition into numbered groups, groups are ordered
 
 Suppose there are $m_1$ balls of color no. 1, $m_2$ balls of color no. 2, ..., $m_r$ balls of color no. r. Their colors are disguishable but balls of the same color are not. $m_1+m_2+\cdots+m_r=m$, how many distinguishable arrangements of these m balls are there?
 
-Question: We are dealing with r-tuples $(\lbrace a_{1,1},\cdots, a_{1,m_1}\rbrace, \lbrace a_{2,1},\cdots, a_{2,m_2}\rbrace,\cdots, \lbrace a_{r,1},\cdots, a_{r,m_r}\rbrace)$
+Question: We are dealing with $r$-tuples $(\lbrace b_{1,1},\cdots, b_{1,m_1}\rbrace, \lbrace b_{2,1},\cdots, b_{2,m_2}\rbrace,\cdots, \lbrace b_{r,1},\cdots, b_{r,m_r}\rbrace)$
 
 Ans: Step 1, there are $\binom{m}{m_1}$ for the first group with $m_1$ members; step 2,$\binom{m-m_1}{m_2}$; step 3,$\binom{m-m_1-m_2}{m_3}$; ...; step r, $\binom{m_r}{m_r}$. Hence,
 
@@ -119,7 +119,7 @@ Namely, $(\lbrace 1,2\rbrace,\lbrace 3,4\rbrace),(\lbrace 1,3\rbrace,\lbrace 2,4
 
 Let a population of m objects be subdivided into r groups: $m_1$ into group no.1, $m_2$into group no.1,...,$m_r$  into group no.r, where $m_1+m_2+\cdots+m_r=m$ and all $m_j\geq1$. We are not arranging the numbered groups in order.
 
-Question：we will get a set $\lbrace\lbrace a_{1,1},\cdots, a_{1,m_1}\rbrace, \lbrace a_{2,1},\cdots, a_{2,m_2}\rbrace,\cdots, \lbrace a_{r,1},\cdots, a_{r,m_r}\rbrace\rbrace$. 
+Question：we will get a set $\lbrace\lbrace b_{1,1},\cdots, b_{1,m_1}\rbrace, \lbrace b_{2,1},\cdots, b_{2,m_2}\rbrace,\cdots, \lbrace b_{r,1},\cdots, b_{r,m_r}\rbrace\rbrace$. 
 
 Ans: Like Case IIIa, step 1, there are $\binom{m}{m_1}$ for the first group with $m_1$ members; step 2,$\binom{m-m_1}{m_2}$; step 3,$\binom{m-m_1-m_2}{m_3}$; ...; step r, $\binom{m_r}{m_r}$. The only difference is the groups are unordered. 
 
@@ -141,7 +141,7 @@ But now suppose the two pairs are going to play double tennis together and the "
 
 ## Case IV: Sampling with replacement and without ordering
 
-Question: The sample can be denoted as $\lbrace a_1, a_2, \cdots, a_n\rbrace$, but different $a_j$ may be the same number, then the size of the set is changing from 1 to n.
+Question: The sample can be denoted as $\lbrace b_1, b_2, \cdots, b_n\rbrace$, but different $b_j$ may be the same number, then the size of the set is changing from 1 to n.
 
 For example, 6 indistinguishable dice are rolled. How many different arrangements we will get?
 
@@ -159,7 +159,7 @@ Let's solve the question: 6 indistinguishable dice are rolled. How many differen
 
 Experimentally let's label each dice as they are independent by nature. Say we use 6 dices of red, orange, yellow, green, blue, purple 6 colors respectively. 
 
-We record the result in this color order as a 6-tuple $(a_1, a_2, \cdots, a_6)$ and observe whether there is a patern.
+We record the result in this color order as a 6-tuple $(b_1, b_2, \cdots, b_6)$ and observe whether there is a patern.
 
 First prepare a "tally sheet" with numbers indicating the balls in the top line.
 
@@ -228,7 +228,7 @@ $$
 
 ---
 
-**Probem 2**: if a deck of poker cards is thoroughly shuffled, what is the probability that the four aces are found in a row?
+**Problem 2**: if a deck of poker cards is thoroughly shuffled, what is the probability that the four aces are found in a row?
 
 Ans: $\Omega$={a deck of poker cards is thoroughly shuffled}, $A$={the four aces are found in a row}. 
 
@@ -323,46 +323,9 @@ Like above, if the groups are unordered, $P(A)$ is the same.
 
 ---
 
-**Problem 4**: Six dice are rolled. What is the probability of getting three pairs?
-
-Ans: $\Omega$ = {Six dice are rolled}, $A$ = {three pairs of 6 dices}. 
-
-$$
-|\Omega|=6^6
-$$
-
-Step 1: Choose 1 pair from 6 dices. This pair might show any number of 6.$a_1=\binom{6}{2}\binom{6}{1}$.
-
-Step 2: Choose 1 pair from the rest 4 dices, this pair might show any number of 5.
-$a_2=\binom{4}{2}\binom{5}{1}$.
-
-Step 3: Choose 1 pair from the rest 2 dices, this pair might show any number of 4.
-$a_3=\binom{2}{2}\binom{4}{1}$.
-
-Obviously, the pairs are not ordered. Therefore,
-
-$$
-|A|=\frac{a_1\times a_2\times a_3}{3!}=\frac{\binom{6}{2}\binom{6}{1} \times \binom{4}{2}\binom{5}{1}\times  \binom{2}{2}\binom{4}{1}}{3!}=\frac{6!}{2!2!2!}\frac{6\times 5\times 4}{3!}.
-$$
-
-However, by definition, some sample points in the sample space fall in the event A subset, so we can calculate the probability by counting the number of sample points in the subset A and in the sample space.
-
-We have to think it through: when we shrink the size of A by categorizing some sample points to be 1, how many sample points originally?
-
-Here, let $A'$ be 3 ordered pairs. Then multiple sample points are not categorized into 1.
-
-$$
-|A'|=\binom{6}{2}\binom{6}{1} \times \binom{4}{2}\binom{5}{1}\times  \binom{2}{2}\binom{4}{1}=\frac{6!}{2!2!2!}6\times 5\times 4
-$$
-
-Hence,
-
-$$P(A')=\frac{|A'|}{|\Omega|}=\frac{\frac{6!}{2!2!2!}6\times 5\times 4}{6^6}$$
 
 
-
----
-Problem 5. (Birthdays). What is the probability that among n people there are at least two who have the same birthday?
+Problem 4. (Birthdays). What is the probability that among n people there are at least two who have the same birthday?
 
 Ans: $\Omega$={n people, birthday could be one of 365 days}, $A$={at least two who have the same birthday}. $A^c$={everyone has a unique birthday}
 
