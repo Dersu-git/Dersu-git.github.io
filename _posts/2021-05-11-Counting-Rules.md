@@ -325,8 +325,8 @@ Like above, if the groups are unordered, $P(A)$ is the same.
 
 **Problem 4**: Six dice are rolled. What's the problem of getting three pairs?
 
-Ans: $\Omega=\lbrace (\omega_1,  \omega_2, \cdots, \omega_6)\rbrace $,  $\omega_i$ is the $i$th dice,  $\omega_i \in \lbrace 1,  2,  ...,  6\rbrace $.
- $A=\lbrace ((\lbrace p_{11}, p_{12}\rbrace , d_1), (\lbrace p_{21}, p_{22}\rbrace , d_2), (\lbrace p_{31}, p_{32}\rbrace ,  d_3))\rbrace $,  $p_{ij}$ is the label of the dice, $p_{ij} \in \lbrace A, B, ..., F\rbrace , i,j \in \lbrace 1, 2, 3\rbrace $. $d_i$ is the figure a dice shows, $d_i \in \lbrace 1, 2,..., 6\rbrace $. 
+Ans: $\Omega=\lbrace (\omega_1,  \omega_2, \cdots, \omega_6)\rbrace$,  $\omega_i$ is the $i$th dice,  $\omega_i \in \lbrace 1,  2,  ...,  6\rbrace$.
+ $A=\lbrace ((\lbrace p_{11}, p_{12}\rbrace , d_1), (\lbrace p_{21}, p_{22}\rbrace, d_2), (\lbrace p_{31}, p_{32}\rbrace ,  d_3))\rbrace$,  $p_{ij}$ is the label of the dice, $p_{ij} \in \lbrace A, B, ..., F\rbrace , i,j \in \lbrace 1, 2, 3\rbrace$. $d_k$ is the figure a dice shows, $d_k \in \lbrace 1, 2,..., 6\rbrace, k \in \lbrace 1, 2, 3\rbrace$. 
 
 $$
 |\Omega|=6^6
