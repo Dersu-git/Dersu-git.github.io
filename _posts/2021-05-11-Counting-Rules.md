@@ -280,11 +280,11 @@ $$
 P(A)=\frac{|A|}{|\Omega|}=\frac{\frac{12!}{4!4!4!}3!}{\frac{15!}{5!5!5!} }
 $$
 
-If the groups are unordered, both $\mid A \mid$ and $\mid \Omega \mid$ need to be divided by $3!$, $P(A)$ stays the same.
+If the groups are unordered, both $\mid A\mid$ and $\mid\Omega\mid$ need to be divided by $3!$, $P(A)$ stays the same.
 
 Now the second question: One class gets 3 whiz-kids?
 
-Same $\mid \Omega \mid$. Still let's assume the groups are ordered.
+Same $\mid\Omega\mid$. Still let's assume the groups are ordered.
 
 Students are labelled as: $(s_1,s_2,\cdots,s_{12},w_1,w_2,w_3)$
 
@@ -326,17 +326,17 @@ Like above, if the groups are unordered, $P(A)$ is the same.
 **Problem 4**: Six dice are rolled. What's the problem of getting three pairs?
 
 Ans: $\Omega=\lbrace (\omega_1,  \omega_2, \cdots, \omega_6)\rbrace$,  $\omega_i$ is the $i$th dice,  $\omega_i \in \lbrace 1,  2,  ...,  6\rbrace$.
- $A=\lbrace ((\lbrace p_{11}, p_{12}\rbrace , d_1), (\lbrace p_{21}, p_{22}\rbrace, d_2), (\lbrace p_{31}, p_{32}\rbrace ,  d_3))\rbrace$,  $p_{ij}$ is the label of the dice, $p_{ij} \in \lbrace A, B, ..., F\rbrace , i,j \in \lbrace 1, 2, 3\rbrace$. $d_k$ is the figure a dice shows, $d_k \in \lbrace 1, 2,..., 6\rbrace, k \in \lbrace 1, 2, 3\rbrace$. 
+ $A=\lbrace ((\lbrace p_{11}, p_{12}\rbrace , d_1), (\lbrace p_{21}, p_{22}\rbrace, d_2), (\lbrace p_{31}, p_{32}\rbrace ,  d_3))\rbrace$,  $p_{ij}$ is the label of the dice, $p_{ij} \in \lbrace U, V, W, X, Y, Z\rbrace, i,j \in \lbrace 1, 2, 3\rbrace$. $d_k$ is the figure a dice shows, $d_k \in \lbrace 1, 2,..., 6\rbrace, k \in \lbrace 1, 2, 3\rbrace$. 
 
 $$
 |\Omega|=6^6
 $$
 
-Let's imagine. If we record the outcomes of the experiments in order from Dice A to F. Then the outcome $(1, 1, 3, 4, 3, 4)$ is different from $(3, 3, 1, 4, 1, 4)$, but the pairs are the same. The pairs are unordered.
-Without the loss of generality, suppose $p_{11}=A$,  $p_{11} < p_{12}, p_{21} < p_{22}, p_{31} < p_{32}, p_{11} < p_{21} < p_{31}$. Hence,
+Let's imagine. If we record the outcomes of the experiments in order from Dice U to Z. Then the outcome $(1, 1, 3, 4, 3, 4)$ is different from $(3, 3, 1, 4, 1, 4)$, but the pairs are the same. The pairs are unordered.
+Without the loss of generality, suppose $p_{11}=U$,  $p_{11} < p_{12}, p_{21} < p_{22}, p_{31} < p_{32}, p_{11} < p_{21} < p_{31}$. Hence,
 
-$(1, 1, 3, 4, 3, 4)$ is denoted as $((\lbrace A, B\rbrace , 1), (\lbrace C, E\rbrace , 3), (\lbrace D, F\rbrace ,  4))$.
-And $(3, 3, 1, 4, 1, 4)$ $((\lbrace A, B\rbrace , 3), (\lbrace C, E\rbrace , 1), (\lbrace D, F\rbrace ,  4))$.
+$(1, 1, 3, 4, 3, 4)$ is denoted as $((\lbrace U, V\rbrace, 1), (\lbrace W, Y\rbrace , 3), (\lbrace X, Z\rbrace ,  4))$.
+And $(3, 3, 1, 4, 1, 4)$ $((\lbrace U, V\rbrace, 3), (\lbrace W, Y\rbrace , 1), (\lbrace X, Z\rbrace ,  4))$.
 
 Step 1：Divide 6 dice into 3 unordered pairs.
 $a_1=\binom{6}{2}\binom{4}{2}\binom{2}{2}/3!=15$
@@ -345,7 +345,7 @@ Step 2：Calculate the possibilities of figures each pair show. Choose 3 out of 
 
 $a_2=\binom{6}{1}\binom{5}{1}\binom{4}{1}=120$
 
-Do we shrink the size of $\mid A \mid$ because there are sets？No. Because a pair dice show the same figure. Say $(1, 1, 3, 4, 3, 4)$,  there is no other experiment outcome can be recorded as $((\lbrace A, B\rbrace , 1), (\lbrace C, E\rbrace , 3), (\lbrace D, F\rbrace ,  4))$.
+Do we shrink the size of $\mid A \mid$ because there are sets？No. Because a pair dice show the same figure. Say $(1, 1, 3, 4, 3, 4)$,  there is no other experiment outcome can be recorded as $((\lbrace U, V\rbrace , 1), (\lbrace W, Y\rbrace , 3), (\lbrace X, Z\rbrace ,  4))$.
 
 $$
 \mid A\mid=a_1\times a_2=15\times 120=1800
@@ -355,10 +355,10 @@ $$
 P(A)=\frac{|A|}{|\Omega|}=\frac{1800}{6^6}
 $$
 
-In the book, the solution is this: Step 1, what 3 figures the dice show in pairs at a glance? $a_1=\binom{6}{3}=20$. Step 2, allocate 6 ordered dice for each figure:  $a_2=\binom{6}{2}\binom{4}{2}\binom{2}{2}=\frac{6!}{2!2!2!}=90$. For this solution, we can design the structure of $\mid A \mid$ this way:  $A=\lbrace ((d_1, \lbrace p_{11}, p_{12}\rbrace ), (d_2, \lbrace p_{21}, p_{22}\rbrace ), (d_3, \lbrace p_{31}, p_{32}\rbrace ))\rbrace $,  $d_1 < d_2 < d_3$.
+In the book, the solution is this: Step 1, what 3 figures the dice show in pairs at a glance? $a_1=\binom{6}{3}=20$. Step 2, allocate 6 ordered dice for each figure:  $a_2=\binom{6}{2}\binom{4}{2}\binom{2}{2}=\frac{6!}{2!2!2!}=90$. For this solution, we can design the structure of $\mid A\mid$ this way:  $A=\lbrace ((d_1, \lbrace p_{11}, p_{12}\rbrace ), (d_2, \lbrace p_{21}, p_{22}\rbrace), (d_3, \lbrace p_{31}, p_{32}\rbrace ))\rbrace$,  $d_1 < d_2 < d_3$.
 
-$(1, 1, 3, 4, 3, 4)$ is denoted as $((1, \lbrace A, B\rbrace ), (3, \lbrace C, E\rbrace ),(4, \lbrace D, F\rbrace ))$.
-And $(3, 3, 1, 4, 1, 4)$ $((1, \lbrace C, E\rbrace ),(3, \lbrace A, B\rbrace ),  (4, \lbrace D, F\rbrace ))$.
+$(1, 1, 3, 4, 3, 4)$ is denoted as $((1, \lbrace U, V\rbrace ), (3, \lbrace W, Y\rbrace ),(4, \lbrace X, Z\rbrace ))$.
+And $(3, 3, 1, 4, 1, 4)$ $((1, \lbrace W, Y\rbrace ),(3, \lbrace U, V\rbrace ),  (4, \lbrace X, Z\rbrace ))$.
 
 > If you don't see the problem well, try some particular (but not too particular) case with small numbers so you can see better.[3]
 
@@ -400,7 +400,7 @@ $$
 [3]Kai Lai Chung, Farid AitSahlia, Elementary Probability Theory(Fouth Edition), p62 
 
 
-####Apology
+####An Apology
 I am sorry that I made a serious mistake in Problem 4 last version. I was wrong in solving the problem. The book is right. It takes me months to recognize my error. How arrogant and ungrateful I was. I am terribly sorry to Professor Chung. The book gave me a knowledge framework of counting and raised me up. 
 
 And it's basically forbidden to copy a book in a blog, but I don't know how to bring out what I want to say without this framework.
