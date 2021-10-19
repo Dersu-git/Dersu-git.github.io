@@ -345,24 +345,24 @@ Step 2：Calculate the possibilities of figures each pair show. Choose 3 out of 
 
 $a_2=\binom{6}{1}\binom{5}{1}\binom{4}{1}=120$
 
-Do we shrink the size of $|A|$ because there are sets？No. Because a pair dice show the same figure. Say $(1, 1, 3, 4, 3, 4)$,  there is no other experiment outcome can be recorded as $((\lbrace A, B\rbrace , 1), (\lbrace C, E\rbrace , 3), (\lbrace D, F\rbrace ,  4))$.
+Do we shrink the size of $\mid A \mid$ because there are sets？No. Because a pair dice show the same figure. Say $(1, 1, 3, 4, 3, 4)$,  there is no other experiment outcome can be recorded as $((\lbrace A, B\rbrace , 1), (\lbrace C, E\rbrace , 3), (\lbrace D, F\rbrace ,  4))$.
 
 $$
-|A|=a_1\times a_2=15\times 120=1800
+\mid A\mid=a_1\times a_2=15\times 120=1800
 $$
 
 $$
 P(A)=\frac{|A|}{|\Omega|}=\frac{1800}{6^6}
 $$
 
-In the book, the solution is this: Step 1, what 3 figures the dice show in pairs at a glance? $a_1=\binom{6}{3}=20$. Step 2, allocate 6 ordered dice for each figure:  $a_2=\binom{6}{2}\binom{4}{2}\binom{2}{2}=\frac{6!}{2!2!2!}=90$. For this solution, we can design the structure of $|A|$ this way:  $A=\lbrace ((d_1, \lbrace p_{11}, p_{12}\rbrace ), (d_2, \lbrace p_{21}, p_{22}\rbrace ), (d_3, \lbrace p_{31}, p_{32}\rbrace ))\rbrace $,  $d_1 < d_2 < d_3$.
+In the book, the solution is this: Step 1, what 3 figures the dice show in pairs at a glance? $a_1=\binom{6}{3}=20$. Step 2, allocate 6 ordered dice for each figure:  $a_2=\binom{6}{2}\binom{4}{2}\binom{2}{2}=\frac{6!}{2!2!2!}=90$. For this solution, we can design the structure of $\mid A \mid$ this way:  $A=\lbrace ((d_1, \lbrace p_{11}, p_{12}\rbrace ), (d_2, \lbrace p_{21}, p_{22}\rbrace ), (d_3, \lbrace p_{31}, p_{32}\rbrace ))\rbrace $,  $d_1 < d_2 < d_3$.
 
 $(1, 1, 3, 4, 3, 4)$ is denoted as $((1, \lbrace A, B\rbrace ), (3, \lbrace C, E\rbrace ),(4, \lbrace D, F\rbrace ))$.
 And $(3, 3, 1, 4, 1, 4)$ $((1, \lbrace C, E\rbrace ),(3, \lbrace A, B\rbrace ),  (4, \lbrace D, F\rbrace ))$.
 
 > If you don't see the problem well, try some particular (but not too particular) case with small numbers so you can see better.[3]
 
-If 4 dice are rolled, what's probability of 2 pairs? Step 1, using the answer of the question "In how many ways can four people split into two pairs?", $3$. Step 2, there are $6\times 5$ possibilities of numbers. $P(A)=\frac{|A|}{|\Omega|}=\frac{3\times 6\times 5}{6^4}$.
+If 4 dice are rolled, what's probability of 2 pairs? Step 1, using the answer of the question "In how many ways can four people split into two pairs?", $3$. Step 2, there are $6\times 5$ possibilities of numbers. $P(A)=\frac{\mid A\mid}{\mid \Omega \mid}=\frac{3\times 6\times 5}{6^4}$.
 
 ---
 
