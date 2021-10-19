@@ -35,14 +35,14 @@ For example, there are 3 choices for Appetizer and 4 for Main course and 5 for d
 
 We can model the combinatorial problems in reality with sampling in 4 basic cases. 
 
-A **transparent** urn contains m distinguishable balls marked 1 to m, from which n balls will be drawn under various specified conditions. To count the possile arrangements, i.e. to calculate $a$. 
+A **transparent** urn contains m distinguishable balls marked 1 to m, from which n balls will be drawn under various specified conditions. Count the possile arrangements $a$. 
 
 By "transparent", it means one can see all the balls in the urn during the experiment. Because our purpose is to calculate all the sample points, if it is a black box, we may draw repetitive outcomes that contribute one sample points. Since we are counting, it's confusing, isn't it?
 
 Here the sample space $\Omega$ is $\lbrace 1,2,\cdots,m\rbrace$, each item is a sample point.
 
 ## Case I: Sampling with replacement and with ordering
-Question: we can interpret a sample with replacement and with ordering to be a n-tuple $(b_1, b_2, \cdots, b_n)$, any $b_i$ is the mark of the ball, namely any number from 1 to $m$. How many different $n$-tuples?
+Question: we can interpret a sample with replacement and with ordering to be an $n$-tuple $(b_1, b_2, \cdots, b_n)$, any $b_i$ is the label of the ball, namely any number from 1 to $m$. How many different $n$-tuples?
 
 Ans: Fundamental Rule works here.
 
@@ -59,7 +59,7 @@ To throw 3 distinguishable dice once is also this case.
 
 ## Case II: Sampling without replacement and with ordering
 
-Question: Again, a sample can be denoted by a $n$-tuple $（b_1, b_2, \cdots, b_n）$ with a restriction that all $b_j$ be different. How many such $n$-tuples?
+Question: Again, a sample can be denoted by an $n$-tuple $（b_1, b_2, \cdots, b_n）$ with a restriction that all $b_j$ be different. How many such $n$-tuples?
 
 Ans: step 1, there are $\binom{m}{1}$ possibilities for $b_1$; step 2, $\binom{m-1}{1}$ for $b_2$;...; step n, $\binom{m-n+1}{1}$ for $b_n$. Hence,
 
@@ -81,9 +81,9 @@ Ans: Likewise, step 1, there are $\binom{m}{1}$ possibilities for $b_1$; Step 2,
 
 But the items in a set are unordered. 
 
-**Each unordered sample of size n produces $n!$ ordered ones.**[1]
+**Each unordered sample of size $n$ produces $n!$ ordered ones.**[1]
 
-For example, if $m=5, n=3$, the subsets $\lbrace 2,4,5\rbrace$ can be drawn in $3!=6$ ways as follows:
+For example, if $m=5, n=3$, the subset $\lbrace 2,4,5\rbrace$ can be drawn in $3!=6$ ways as follows:
 
 $(2,4,5),(2,5,4),(4,2,5),(4,5,2),(5,2,4),(5,4,2).$  
 
@@ -99,7 +99,7 @@ This is the **combination**, counting how many ways to choose unordered $n$ ball
 
 Suppose there are $m_1$ balls of color no. 1, $m_2$ balls of color no. 2, ..., $m_r$ balls of color no. r. Their colors are disguishable but balls of the same color are not. $m_1+m_2+\cdots+m_r=m$, how many distinguishable arrangements of these m balls are there?
 
-Question: We are dealing with $r$-tuples $(\lbrace b_{1,1},\cdots, b_{1,m_1}\rbrace, \lbrace b_{2,1},\cdots, b_{2,m_2}\rbrace,\cdots, \lbrace b_{r,1},\cdots, b_{r,m_r}\rbrace)$
+Question: We are dealing with $r$-tuples $(\lbrace b_{1,1},\cdots, b_{1,m_1}\rbrace, \lbrace b_{2,1},\cdots, b_{2,m_2}\rbrace,\cdots, \lbrace b_{r,1},\cdots, b_{r,m_r}\rbrace)$.
 
 Ans: Step 1, there are $\binom{m}{m_1}$ for the first group with $m_1$ members; step 2,$\binom{m-m_1}{m_2}$; step 3,$\binom{m-m_1-m_2}{m_3}$; ...; step r, $\binom{m_r}{m_r}$. Hence,
 
@@ -117,7 +117,7 @@ Namely, $(\lbrace 1,2\rbrace,\lbrace 3,4\rbrace),(\lbrace 1,3\rbrace,\lbrace 2,4
 
 ### Case IIIb：Partition into numbered groups, groups are unordered
 
-Let a population of m objects be subdivided into r groups: $m_1$ into group no.1, $m_2$into group no.1,...,$m_r$  into group no.r, where $m_1+m_2+\cdots+m_r=m$ and all $m_j\geq1$. We are not arranging the numbered groups in order.
+Let a population of $m$ objects be subdivided into $r$ groups: $m_1$ into group no.1, $m_2$ into group no.1, ..., $m_r$  into group no.r, where $m_1+m_2+\cdots+m_r=m$ and all $m_j\geq 1$. We are not arranging the numbered groups in order.
 
 Question：we will get a set $\lbrace\lbrace b_{1,1},\cdots, b_{1,m_1}\rbrace, \lbrace b_{2,1},\cdots, b_{2,m_2}\rbrace,\cdots, \lbrace b_{r,1},\cdots, b_{r,m_r}\rbrace\rbrace$. 
 
@@ -141,7 +141,7 @@ But now suppose the two pairs are going to play double tennis together and the "
 
 ## Case IV: Sampling with replacement and without ordering
 
-Question: The sample can be denoted as $\lbrace b_1, b_2, \cdots, b_n\rbrace$, but different $b_j$ may be the same number, then the size of the set is changing from 1 to n.
+Question: The sample can be denoted as $\lbrace b_1, b_2, \cdots, b_n\rbrace$, but different $b_j$ may be the same number, then the size of the set is changing from 1 to $n$.
 
 For example, 6 indistinguishable dice are rolled. How many different arrangements we will get?
 
@@ -149,7 +149,7 @@ This is confusing.
 
 Let's look at a simpler example: Toss 2 indistinguishable coins, how many different arrangements？
 
-Brute force will do. If the result is $(T,T)$, it's $\lbrace T, T\rbrace=\lbrace T\rbrace$; $(H,H)$ leads to $\lbrace H, H\rbrace$; $(H,T)$ or $(T,H)$ is recorded as $\lbrace H, T\rbrace$. So, $a=3$.
+Brute force will do. If the result is $(T,T)$, it's $\lbrace T, T\rbrace=\lbrace T\rbrace$; $(H,H)$ leads to $\lbrace H, H\rbrace$; $(H,T)$ or $(T,H)$ are recorded as $\lbrace H, T\rbrace$. So, $a=3$.
 
 > This probability should be have something to do with the experimental frequency of the occurrence of the event.[2]
 
@@ -323,9 +323,50 @@ Like above, if the groups are unordered, $P(A)$ is the same.
 
 ---
 
+**Problem 4**: Six dice are rolled. What's the problem of getting three pairs?
 
+Ans: $\Omega=\lbrace (\omega_1,  \omega_2, \cdots, \omega_6)\rbrace $,  $\omega_i$ is the $i$th dice,  $\omega_i \in \lbrace 1,  2,  ...,  6\rbrace $.
+ $A=\lbrace ((\lbrace p_{11}, p_{12}\rbrace , d_1), (\lbrace p_{21}, p_{22}\rbrace , d_2), (\lbrace p_{31}, p_{32}\rbrace ,  d_3))\rbrace $,  $p_{ij}$ is the label of the dice, $p_{ij} \in \lbrace A, B, ..., F\rbrace , i,j \in \lbrace 1, 2, 3\rbrace $. $d_i$ is the figure a dice shows, $d_i \in \lbrace 1, 2,..., 6\rbrace $. 
 
-Problem 4. (Birthdays). What is the probability that among n people there are at least two who have the same birthday?
+$$
+|\Omega|=6^6
+$$
+
+Let's imagine. If we record the outcomes of the experiments in order from Dice A to F. Then the outcome $(1, 1, 3, 4, 3, 4)$ is different from $(3, 3, 1, 4, 1, 4)$, but the pairs are the same. The pairs are unordered.
+Without the loss of generality, suppose $p_{11}=A$,  $p_{11} < p_{12}, p_{21} < p_{22}, p_{31} < p_{32}, p_{11} < p_{21} < p_{31}$. Hence,
+
+$(1, 1, 3, 4, 3, 4)$ is denoted as $((\lbrace A, B\rbrace , 1), (\lbrace C, E\rbrace , 3), (\lbrace D, F\rbrace ,  4))$.
+And $(3, 3, 1, 4, 1, 4)$ $((\lbrace A, B\rbrace , 3), (\lbrace C, E\rbrace , 1), (\lbrace D, F\rbrace ,  4))$.
+
+Step 1：Divide 6 dice into 3 unordered pairs.
+$a_1=\binom{6}{2}\binom{4}{2}\binom{2}{2}/3!=15$
+
+Step 2：Calculate the possibilities of figures each pair show. Choose 3 out of 6, ordered. If the result is unordered, the 2 outcomes $(1, 1, 3, 4, 3, 4)$ and  $(3, 3, 1, 4, 1, 4)$ are counted as 1.
+
+$a_2=\binom{6}{1}\binom{5}{1}\binom{4}{1}=120$
+
+Do we shrink the size of $|A|$ because there are sets？No. Because a pair dice show the same figure. Say $(1, 1, 3, 4, 3, 4)$,  there is no other experiment outcome can be recorded as $((\lbrace A, B\rbrace , 1), (\lbrace C, E\rbrace , 3), (\lbrace D, F\rbrace ,  4))$.
+
+$$
+|A|=a_1\times a_2=15\times 120=1800
+$$
+
+$$
+P(A)=\frac{|A|}{|\Omega|}=\frac{1800}{6^6}
+$$
+
+In the book, the solution is this: Step 1, what 3 figures the dice show in pairs at a glance? $a_1=\binom{6}{3}=20$. Step 2, allocate 6 ordered dice for each figure:  $a_2=\binom{6}{2}\binom{4}{2}\binom{2}{2}=\frac{6!}{2!2!2!}=90$. For this solution, we can design the structure of $|A|$ this way:  $A=\lbrace ((d_1, \lbrace p_{11}, p_{12}\rbrace ), (d_2, \lbrace p_{21}, p_{22}\rbrace ), (d_3, \lbrace p_{31}, p_{32}\rbrace ))\rbrace $,  $d_1 < d_2 < d_3$.
+
+$(1, 1, 3, 4, 3, 4)$ is denoted as $((1, \lbrace A, B\rbrace ), (3, \lbrace C, E\rbrace ),(4, \lbrace D, F\rbrace ))$.
+And $(3, 3, 1, 4, 1, 4)$ $((1, \lbrace C, E\rbrace ),(3, \lbrace A, B\rbrace ),  (4, \lbrace D, F\rbrace ))$.
+
+> If you don't see the problem well, try some particular (but not too particular) case with small numbers so you can see better.[3]
+
+If 4 dice are rolled, what's probability of 2 pairs? Step 1, using the answer of the question "In how many ways can four people split into two pairs?", $3$. Step 2, there are $6\times 5$ possibilities of numbers. $P(A)=\frac{|A|}{|\Omega|}=\frac{3\times 6\times 5}{6^4}$.
+
+---
+
+Problem 5. (Birthdays). What is the probability that among n people there are at least two who have the same birthday?
 
 Ans: $\Omega$={n people, birthday could be one of 365 days}, $A$={at least two who have the same birthday}. $A^c$={everyone has a unique birthday}
 
@@ -356,3 +397,4 @@ $$
 #### Reference  
 [1]Kai Lai Chung, Farid AitSahlia, Elementary Probability Theory(Fouth Edition), p52  
 [2]Kai Lai Chung, Farid AitSahlia, Elementary Probability Theory(Fouth Edition), p28  
+[3]Kai Lai Chung, Farid AitSahlia, Elementary Probability Theory(Fouth Edition), p62 
