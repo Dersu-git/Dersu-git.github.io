@@ -323,10 +323,10 @@ Like above, if the groups are unordered, $P(A)$ is the same.
 
 ---
 
-**Problem 4**: Six dice are rolled. What's the problem of getting three pairs?
+**Problem 4**: Six dice are rolled. What's the probability of getting three pairs?
 
 Ans: $\Omega=\lbrace (\omega_1,  \omega_2, \cdots, \omega_6)\rbrace$,  $\omega_i$ is the $i$th dice,  $\omega_i \in \lbrace 1,  2,  ...,  6\rbrace$.
- $A=\lbrace ((\lbrace p_{11}, p_{12}\rbrace , d_1), (\lbrace p_{21}, p_{22}\rbrace, d_2), (\lbrace p_{31}, p_{32}\rbrace ,  d_3))\rbrace$,  $p_{ij}$ is the label of the dice, $p_{ij} \in \lbrace U, V, W, X, Y, Z\rbrace, i,j \in \lbrace 1, 2, 3\rbrace$. $d_k$ is the figure a dice shows, $d_k \in \lbrace 1, 2,..., 6\rbrace, k \in \lbrace 1, 2, 3\rbrace$. 
+ $A=\lbrace ((\lbrace p_{11}, p_{12}\rbrace , d_1), (\lbrace p_{21}, p_{22}\rbrace, d_2), (\lbrace p_{31}, p_{32}\rbrace ,  d_3))\rbrace$,  $p_{ij}$ is the label of the dice, $p_{ij} \in \lbrace U, V, W, X, Y, Z\rbrace, i,j \in \lbrace 1, 2, 3\rbrace$. $d_k$ is the number a dice shows, $d_k \in \lbrace 1, 2,..., 6\rbrace, k \in \lbrace 1, 2, 3\rbrace$. 
 
 $$
 |\Omega|=6^6
@@ -341,24 +341,24 @@ And $(3, 3, 1, 4, 1, 4)$ $((\lbrace U, V\rbrace, 3), (\lbrace W, Y\rbrace , 1), 
 Step 1：Divide 6 dice into 3 unordered pairs.
 $a_1=\binom{6}{2}\binom{4}{2}\binom{2}{2}/3!=15$
 
-Step 2：Calculate the possibilities of figures each pair show. Choose 3 out of 6, ordered. If the result is unordered, the 2 outcomes $(1, 1, 3, 4, 3, 4)$ and  $(3, 3, 1, 4, 1, 4)$ are counted as 1.
+Step 2：Calculate the possibilities of numbers each pair show. Choose 3 out of 6, ordered. If the result is unordered, the 2 outcomes $(1, 1, 3, 4, 3, 4)$ and  $(3, 3, 1, 4, 1, 4)$ are counted as 1.
 
 $a_2=\binom{6}{1}\binom{5}{1}\binom{4}{1}=120$
 
-Do we shrink the size of $\mid A \mid$ because there are sets？No. Because a pair dice show the same figure. Say $(1, 1, 3, 4, 3, 4)$,  there is no other experiment outcome can be recorded as $((\lbrace U, V\rbrace , 1), (\lbrace W, Y\rbrace , 3), (\lbrace X, Z\rbrace ,  4))$.
+Do we shrink the size of $\mid A \mid$ because there are sets？No. Because a pair dice show the same number. Say $(1, 1, 3, 4, 3, 4)$,  there is no other experiment outcome that can be recorded as $((\lbrace U, V\rbrace , 1), (\lbrace W, Y\rbrace , 3), (\lbrace X, Z\rbrace ,  4))$.
 
 $$
-\mid A\mid=a_1\times a_2=15\times 120=1800
+|A|=a_1\times a_2=15\times 120=1800
 $$
 
 $$
 P(A)=\frac{|A|}{|\Omega|}=\frac{1800}{6^6}
 $$
 
-In the book, the solution is this: Step 1, what 3 figures the dice show in pairs at a glance? $a_1=\binom{6}{3}=20$. Step 2, allocate 6 ordered dice for each figure:  $a_2=\binom{6}{2}\binom{4}{2}\binom{2}{2}=\frac{6!}{2!2!2!}=90$. For this solution, we can design the structure of $\mid A\mid$ this way:  $A=\lbrace ((d_1, \lbrace p_{11}, p_{12}\rbrace ), (d_2, \lbrace p_{21}, p_{22}\rbrace), (d_3, \lbrace p_{31}, p_{32}\rbrace ))\rbrace$,  $d_1 < d_2 < d_3$.
+In the book, the solution is this: Step 1, what 3 numbers the dice show in pairs at a glance? $a_1=\binom{6}{3}=20$. Step 2, allocate 6 ordered dice for each number:  $a_2=\binom{6}{2}\binom{4}{2}\binom{2}{2}=\frac{6!}{2!2!2!}=90$. For this solution, we can rewrite the structure of $\mid A\mid$ this way:  $A=\lbrace ((d_1, \lbrace p_{11}, p_{12}\rbrace ), (d_2, \lbrace p_{21}, p_{22}\rbrace), (d_3, \lbrace p_{31}, p_{32}\rbrace ))\rbrace$,  $d_1 < d_2 < d_3$.
 
 $(1, 1, 3, 4, 3, 4)$ is denoted as $((1, \lbrace U, V\rbrace ), (3, \lbrace W, Y\rbrace ),(4, \lbrace X, Z\rbrace ))$.
-And $(3, 3, 1, 4, 1, 4)$ $((1, \lbrace W, Y\rbrace ),(3, \lbrace U, V\rbrace ),  (4, \lbrace X, Z\rbrace ))$.
+And $(3, 3, 1, 4, 1, 4)$ is $((1, \lbrace W, Y\rbrace ),(3, \lbrace U, V\rbrace ),  (4, \lbrace X, Z\rbrace ))$.
 
 > If you don't see the problem well, try some particular (but not too particular) case with small numbers so you can see better.[3]
 
