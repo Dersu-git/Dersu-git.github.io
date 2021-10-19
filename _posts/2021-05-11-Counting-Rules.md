@@ -398,3 +398,14 @@ $$
 [1]Kai Lai Chung, Farid AitSahlia, Elementary Probability Theory(Fouth Edition), p52  
 [2]Kai Lai Chung, Farid AitSahlia, Elementary Probability Theory(Fouth Edition), p28  
 [3]Kai Lai Chung, Farid AitSahlia, Elementary Probability Theory(Fouth Edition), p62 
+
+
+####Apology
+I am sorry that I made a serious mistake in Problem 4 last version. I was wrong in solving the problem. The book is right. It takes me months to recognize my error. How arrogant and ungrateful I was. I am terribly sorry to Professor Chung. The book gave me a knowledge framework of counting and raised me up. 
+
+And it's basically forbidden to copy a book in a blog, but I don't know how to bring out what I want to say without this framework.
+
+In my history of learning mathematics, counting was a nightmare and I made a lot of mistakes. And I fail again even now.
+
+Dersu
+Oct. 19, 2021.
