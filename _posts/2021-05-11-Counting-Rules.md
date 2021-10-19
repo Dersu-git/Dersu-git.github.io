@@ -341,7 +341,7 @@ And $(3, 3, 1, 4, 1, 4)$ $((\lbrace U, V\rbrace, 3), (\lbrace W, Y\rbrace , 1), 
 Step 1：Divide 6 dice into 3 unordered pairs.
 $a_1=\binom{6}{2}\binom{4}{2}\binom{2}{2}/3!=15$
 
-Step 2：Calculate the possibilities of numbers each pair show. Choose 3 out of 6, ordered. If the result is unordered, the 2 outcomes $(1, 1, 3, 4, 3, 4)$ and  $(3, 3, 1, 4, 1, 4)$ are counted as 1.
+Step 2：Calculate the possibilities of numbers each pair shows. Choose 3 out of 6, ordered. If the result is unordered, the 2 outcomes $(1, 1, 3, 4, 3, 4)$ and  $(3, 3, 1, 4, 1, 4)$ are counted as 1.
 
 $a_2=\binom{6}{1}\binom{5}{1}\binom{4}{1}=120$
 
